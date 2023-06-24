@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
 % This is altacv.cls (v1.1.5, 1 December 2018) written by
 % LianTze Lim (liantze@gmail.com).
 %
@@ -158,7 +158,7 @@
     \medskip
     {\large\bfseries\color{accent}\@tagline\par}
     \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
+    {\normalsize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
@@ -175,8 +175,8 @@
 
 \newcommand{\cvsection}[2][]{%
   \bigskip%
-  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
+  \ifstrequal{#1}{}{}{\marginpar{\raggedright\input{#1}}}
+  {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
 
