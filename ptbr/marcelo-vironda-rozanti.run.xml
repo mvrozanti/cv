@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>sample.bcf</file>
+      <file>marcelo-vironda-rozanti.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>sample.bbl</file>
+      <file>marcelo-vironda-rozanti.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,22 +64,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>sample</infile>
+      <infile>marcelo-vironda-rozanti</infile>
     </cmdline>
     <input>
-      <file>sample.bcf</file>
+      <file>marcelo-vironda-rozanti.bcf</file>
     </input>
     <output>
-      <file>sample.bbl</file>
+      <file>marcelo-vironda-rozanti.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>sample.bbl</file>
+      <file>marcelo-vironda-rozanti.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>sample.bcf</file>
+      <file>marcelo-vironda-rozanti.bcf</file>
     </requires>
     <requires type="editable">
-      <file>sample.bib</file>
+      <file>marcelo-vironda-rozanti.bib</file>
     </requires>
   </external>
 </requests>

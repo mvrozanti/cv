@@ -30,7 +30,7 @@
 %% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1cm,bottom=1.25cm}
+\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -61,17 +61,17 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+\addbibresource{marcelo-vironda-rozanti.bib}
 
 \begin{document}
 \name{Marcelo Vironda Rozanti}
-\tagline{Desenvolvedor Backend}
+\tagline{Backend Developer}
 % \photo{3.7cm}{moi}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   \email{mvrozanti@hotmail.com}
-  \location{Rua Piauí 163 São Paulo - SP}
+  \location{Rua Piauí 163 São Paulo - SP, Brazil}
   \homepage{mvrozanti.github.io} \\
   \linkedin{linkedin.com/in/mvrozanti}
   \github{github.com/mvrozanti}
@@ -79,13 +79,22 @@
   % \orcid{orcid.org/0000-0000-0000-0000}
 }
 
+%% Make the header extend all the way to the right, if you want.
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
-\cvsection[sample-p1sidebar]{Experiência}
 
-\cvevent{Estagiário}{\href{http://www.azesconsultoria.com.br}{AzEs Consultoria Empresarial}}{2016 -- 2018}{São Paulo}
-Modelagem de expressões regulares para captação e batimento de informações em folhas de pagamento. Criação de aplicação desktop para conduzir a captação.
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[marcelo-vironda-rozanti-p1sidebar]{Experience}
+
+\cvevent{Intern}{\href{http://www.azesconsultoria.com.br}{AzEs Consultoria Empresarial}}{2016 -- 2018}{São Paulo}
+Payroll document processor development in Java. First exposure to Agile Methodology, MVC and OOP design patterns.
 \\
 
 \cvtag{\texttt{git}}
@@ -97,8 +106,8 @@ Modelagem de expressões regulares para captação e batimento de informações 
 
 \divider
 
-\cvevent{Desenvolvedor}{\href{https://www.sys4bank.com.br}{Sys4Bank}}{03/2018 -- 01/2020}{São Paulo}
-Desenvolvimento de soluções bancárias de back e front ends para setores Corporativo, Financeiro, de Crédito e de Conta. Primeiro contato com práticas de CI/CD e Spring Framework. Modelagem diária de banco de dados MSSQL.
+\cvevent{Developer}{\href{https://www.sys4bank.com.br}{Sys4Bank}}{Mar 2018 -- Jan 2020}{São Paulo}
+Bank infrastucture development. Technologies used Git, SpringBoot, Containerization, CI/CD practices and DevOps philosophy. Focus on automation and pipeline implementation. Daily MSSQL Database modeling/usage.
 \\
 
 \cvtag{GNU Coreutils}
@@ -111,8 +120,8 @@ Desenvolvimento de soluções bancárias de back e front ends para setores Corpo
 
 \divider
 
-\cvevent{Desenvolvedor}{\href{https://www.rd.com.br}{Raia Drogasil}}{01/2020 -- 12/2020}{São Paulo}
-Soluções de Operações de Venda com foco na conformidade com a Lei Geral de Proteção de Dados (LGPD). Atualização de software legado. Desenvolvimento de software para integração e interfaceamento com leitores biométricos e impressoras térmicas. Colaboração baseada em times.
+\cvevent{Developer}{\href{https://www.rd.com.br}{Raia Drogasil}}{Jan 2020 -- Dec 2020}{São Paulo}
+Selling Operations solutions, focused on compliance with brazilian "LGPD" data-protection law. Technologies used: Java Applets,\\ JSF/Primefaces, Hardware-specific software development including biometric readers and thermal printers. First contact with DTAP phased approach. Strong team-based production. Daily Oracle Database SQL modeling/usage.
 \\
 
 \cvtag{Java EE}
@@ -127,8 +136,8 @@ Soluções de Operações de Venda com foco na conformidade com a Lei Geral de P
 
 \divider
 
-\cvevent{Desenvolvedor Backend}{\href{https://www.grao.com.br}{Grão}}{12/2020 -- 09/2021}{São Paulo}
-Responsável pela implementação do serviço de pagamento instantâneo Pix em Kotlin. Ambientes de homologação conteinerizados para testes e produção. Tarefas diárias: modelagem de entidades com foco em performance de escrita e acesso no banco de dados. Desenvolvimento de endpoints REST escaláveis. Testes de QA. Ajustes pontuais em front end que consome a API.
+\cvevent{Backend Developer}{\href{https://www.grao.com.br}{Grão}}{Dec 2020 -- Sep 2021}{São Paulo}
+Implementing the backend for supporting the brazilian instant payment system Pix in Kotlin. Container-based environments for testing and production. Daily tasks: performance-focused database entity modeling and MVC-based, scalable REST API design and QA testing. 
 \\
 
 \cvtag{Java EE}
@@ -147,9 +156,9 @@ Responsável pela implementação do serviço de pagamento instantâneo Pix em K
 
 \divider
 
-\cvevent{Desenvolvedor Backend}{\href{https://www.contaazul.com}{Conta Azul}}{09/2021 -- 08/2022}{São Paulo}
+\cvevent{Backend Developer}{\href{https://www.contaazul.com}{Conta Azul}}{Sep 2021 -- Aug 2022}{São Paulo}
 
-Desenvolvimento de soluções contábeis. Responsável pela implementação de um sistema para gerenciamento automático de obrigações fiscais periódicas e aperiódicas relacionadas ao SPED/eSocial, EFD-Reinf.
+Accounting solutions. Implemented a system to automatically manage periodic and aperiodic tax obligations related to brazilian SPED/eSocial government modules.
 \\
 
 \cvtag{Java 8, 11, 15, 16}
