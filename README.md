@@ -1,1 +1,1 @@
-![implemented with https://github.com/liantze/AltaCV](./cv-1.png)
+![implemented with https://github.com/liantze/AltaCV](./cv-ptbr-1.png)
