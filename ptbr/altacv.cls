@@ -304,3 +304,7 @@
   \color{body}
   \raggedright
 }
+
+\makeatletter
+\patchcmd{\cvevent}{\medskip}{\vspace{-0.2\baselineskip}}{}{}
+\makeatother
