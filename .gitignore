@@ -1,2 +1,9 @@
 *.synctex.gz
 *.log
+*.aux
+*.bcf
+*.out
+*.run.xml
+*.xmpdata
+*.bbl
+*.blg
