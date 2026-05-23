@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.3cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{C9543C}
+\definecolor{heading}{HTML}{2B2B2B}
+\definecolor{muted}{HTML}{707070}
+
+\hypersetup{hidelinks}
+
+\setlist[itemize]{leftmargin=1.1em, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+\titleformat{\section}{\Large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\rule{\linewidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\newcommand{\role}[4]{%
+  \noindent\textbf{\large #1} \textcolor{accent}{·} \textbf{#2} \hfill \textcolor{muted}{#3, #4}\par\vspace{2pt}}
+
+\newcommand{\stack}[1]{\par\vspace{2pt}\textcolor{muted}{\small \faToolbox\ #1}\par}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\Huge\bfseries\color{heading} Marcelo Vironda Rozanti}\\[2pt]
+{\large\color{accent} Senior Backend Engineer · JVM · Fintech}\\[4pt]
+\small
+\faEnvelope\ \href{mailto:mvrozanti@hotmail.com}{mvrozanti@hotmail.com} \quad
+\faMapMarker*\ São Paulo, Brazil \quad
+\faGlobe\ \href{https://mvrozanti.github.io}{mvrozanti.github.io} \quad
+\faLinkedin\ \href{https://linkedin.com/in/mvrozanti}{linkedin.com/in/mvrozanti} \quad
+\faGithub\ \href{https://github.com/mvrozanti}{github.com/mvrozanti}
+\end{center}
+
+\section{Summary}
+Senior backend engineer with nine years in regulated Brazilian fintech. JVM (Kotlin / Java + Spring) is home. Comfortable owning production-critical systems end-to-end: design, build, ship, run, recover. Recent depth: credit decisioning, instant payments (Pix), POS / card-present acquiring, fiscal automation.
+
+\section{Experience}
+
+\role{Senior Engineer}{C6 Bank}{04/2025 -- present}{São Paulo}
+\begin{itemize}
+\item Owns design and operation of high-availability credit-granting services across one of Brazil's largest digital banks.
+\item Drives DDD across credit-decision domains; treats observability, idempotency, and recovery as first-class concerns.
+\item Hardens release pipeline (Harness) and runtime posture against the typical fintech failure modes.
+\end{itemize}
+\stack{Kotlin · Spring · MongoDB · PostgreSQL · Docker · Harness · Splunk · Grafana · Koin/Javalin · DDD}
+
+\role{Software Engineer}{Fiserv}{03/2024 -- 04/2025}{São Paulo}
+\begin{itemize}
+\item Delivered POS-platform services in a global card-present payments organization.
+\item Led DevSecOps adoption: Fortify + Sonar gating, CyberArk-backed secrets, hardened CI / CD on Mercurial flows.
+\item Owned disaster-prevention and recovery posture; authored process documentation that outlasts team rotation.
+\end{itemize}
+\stack{Spring · Oracle SQL · Docker · Splunk · Dynatrace · Fortify · Sonar · CyberArk · Redis · Mercurial · ServiceNow}
+
+\role{Backend Engineer}{Conta Azul}{Sep 2021 -- Aug 2022}{São Paulo}
+\begin{itemize}
+\item Built a fiscal-obligations automation engine that took periodic and ad-hoc SPED / eSocial / EFD-Reinf submissions off humans for SMB accounting customers.
+\item Ran on AWS-native primitives with infrastructure-as-code via Terraform.
+\end{itemize}
+\stack{Java · Spring · AWS · Terraform · PostgreSQL · LogDNA}
+
+\role{Backend Engineer}{Grão}{Dec 2020 -- Sep 2021}{São Paulo}
+\begin{itemize}
+\item Implemented Pix instant-payment integration in Kotlin from kickoff to launch -- central-bank-mandated rail.
+\item Performance-focused entity modeling; containerized test and production environments; scalable REST APIs.
+\end{itemize}
+\stack{Kotlin · Java EE · Spring · MySQL · Feign · Firebase · GitLab CI · Graylog · Postman · Svelte}
+
+\role{Software Developer}{Raia Drogasil}{Jan 2020 -- Dec 2020}{São Paulo}
+\begin{itemize}
+\item Brought selling-operations software into LGPD compliance as the law's enforcement window opened.
+\item Integrated biometric readers and thermal printers into the in-store stack; daily Oracle modeling.
+\end{itemize}
+\stack{Java EE · Applets · JSF/PrimeFaces · JBoss · WebLogic · Oracle SQL · DTAP · TDD}
+
+\role{Software Developer}{Sys4Bank}{Mar 2016 -- Jan 2020}{São Paulo}
+\begin{itemize}
+\item Built Spring Boot services backing corporate, financial, credit and account workflows for a banking-software house.
+\item Introduced containerization and Travis CI to a team coming from manual deployment; daily MSSQL.
+\end{itemize}
+\stack{Java · Spring Boot · MSSQL · Maven · Ant · Bash · Travis CI · Linux}
+
+\section{Open source}
+\noindent
+\begin{tabularx}{\linewidth}{@{}lXr@{}}
+\href{https://github.com/mvrozanti/RAT-via-Telegram}{\faGithub\ RAT-via-Telegram} & Windows RAT over Telegram (Python) & \faStar\ 600+ \\
+\href{https://github.com/mvrozanti/dte}{\faGithub\ dte} & Date \& time processing language & \faStar\ 300+ \\
+\href{https://github.com/mvrozanti/yawc}{\faGithub\ yawc} & Yet Another WhatsApp Client & \\
+\href{https://github.com/mvrozanti/dotty}{\faGithub\ dotty} & Dotfiles sync \& version manager & \\
+\end{tabularx}
+
+\section{Skills}
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{Languages} & Kotlin, Java, Python, Shell, C/C++ \\
+\textbf{Frameworks} & Spring, Spring Boot, Javalin, Koin \\
+\textbf{Data} & PostgreSQL, MongoDB, MySQL, Oracle, MSSQL, Redis \\
+\textbf{Platform} & Docker, AWS, Terraform, GitLab CI, Harness, Travis CI, Linux \\
+\textbf{Spoken} & Portuguese (native), English (fluent), Spanish (intermediate) \\
+\end{tabularx}
+
+\section{Education}
+\noindent\textbf{B.Sc.\ Computer Science}, Universidade Presbiteriana Mackenzie, São Paulo \hfill 2020\\
+\textcolor{muted}{Dissertation: asynchronous update schedule by neighborhood priority in elementary cellular automata.}
+
+\end{document}

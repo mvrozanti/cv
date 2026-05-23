@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[scale=0.82]{geometry}
+\usepackage{hyperref}
+
+\name{Marcelo}{Vironda Rozanti}
+\title{Engenheiro de Software Backend Sênior}
+\address{Rua Piauí 163}{São Paulo - SP, Brasil}{}
+\email{mvrozanti@hotmail.com}
+\homepage{mvrozanti.github.io}
+\social[linkedin]{mvrozanti}
+\social[github]{mvrozanti}
+
+\begin{document}
+\makecvtitle
+
+\section{Resumo}
+Engenheiro backend JVM com nove anos em bancos e fintechs brasileiras. Confortável em assumir serviços críticos e regulados do desenho à operação. Foco recente: sistemas de decisão de crédito, pagamentos instantâneos, automação fiscal.
+
+\section{Experiência}
+
+\cventry{04/2025 -- atual}{Engenheiro Sênior}{C6 Bank}{São Paulo}{}{%
+Responsável pelo desenho, implementação e operação de serviços críticos de alta disponibilidade para concessão de crédito. Codebase Kotlin com Domain-Driven Design; observabilidade e padrões de recuperação como cidadãos de primeira classe.
+\begin{itemize}
+\item Kotlin, Spring, MongoDB, PostgreSQL, Docker
+\item Harness em CI/CD; Splunk e Grafana para observabilidade
+\end{itemize}}
+
+\cventry{03/2024 -- 04/2025}{Engenheiro de Software}{Fiserv}{São Paulo}{}{%
+Serviços da plataforma POS para pagamentos presenciais. Responsável pela postura de prevenção e recuperação de desastres; liderou a adoção de DevSecOps.
+\begin{itemize}
+\item Spring, Oracle SQL, Docker, Redis
+\item Splunk + Dynatrace; Fortify, Sonar, CyberArk em CI
+\end{itemize}}
+
+\cventry{09/2021 -- 08/2022}{Desenvolvedor Backend}{Conta Azul}{São Paulo}{}{%
+Construiu automação de obrigações fiscais brasileiras (SPED, eSocial, EFD-Reinf) para clientes contábeis SMB. Primitivos AWS-nativos, IaC via Terraform.}
+
+\cventry{12/2020 -- 09/2021}{Desenvolvedor Backend}{Grão}{São Paulo}{}{%
+Implementou a integração com o Pix em Kotlin, do kickoff ao lançamento. Ambientes containerizados; modelagem focada em performance; APIs REST escaláveis.}
+
+\cventry{01/2020 -- 12/2020}{Desenvolvedor}{Raia Drogasil}{São Paulo}{}{%
+Adequação à LGPD do software de Operações de Venda. Integração de leitores biométricos e impressoras térmicas; modelagem diária em Oracle.}
+
+\cventry{03/2016 -- 01/2020}{Desenvolvedor}{Sys4Bank}{São Paulo}{}{%
+Serviços de back-office bancário sobre Spring Boot. Introduziu containerização e Travis CI; modelagem diária em MSSQL.}
+
+\section{Formação}
+\cventry{2020}{Bacharel em Ciência da Computação}{Universidade Presbiteriana Mackenzie}{São Paulo}{}{%
+Monografia: ``Três experimentos com escalonamento assíncrono de atualização por prioridade de vizinhança em autômatos celulares elementares''.}
+
+\section{Open source}
+\cvitem{\href{https://github.com/mvrozanti/RAT-via-Telegram}{RAT-via-Telegram}}{Windows RAT via Telegram (600+ estrelas)}
+\cvitem{\href{https://github.com/mvrozanti/dte}{dte}}{Linguagem de processamento de data \& hora (300+ estrelas)}
+\cvitem{\href{https://github.com/mvrozanti/dotty}{dotty}}{Versionamento de dotfiles}
+
+\section{Habilidades}
+\cvitem{Linguagens}{Java, Kotlin, Python, C/C++, Shell}
+\cvitem{Frameworks}{Spring, Spring Boot, Javalin, Koin}
+\cvitem{Dados}{PostgreSQL, MongoDB, MySQL, Oracle, MSSQL, Redis}
+\cvitem{Plataforma}{Docker, AWS, Terraform, GitLab CI, Harness, Travis CI}
+\cvitem{Idiomas}{Português (nativo), Inglês (fluente), Espanhol (intermediário)}
+
+\end{document}

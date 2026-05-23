@@ -1,0 +1,111 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\setlist[itemize]{leftmargin=1.2em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\hrule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Marcelo Vironda Rozanti}\\[2pt]
+Engenheiro de Software Backend Sênior | Java | Kotlin | Spring Boot | Pix | Microsserviços\\[2pt]
+São Paulo, Brasil | mvrozanti@hotmail.com | linkedin.com/in/mvrozanti | github.com/mvrozanti | mvrozanti.github.io
+\end{center}
+
+\section{Resumo profissional}
+Engenheiro de Software Backend Sênior com mais de 9 anos de experiência no desenho, construção e operação de sistemas backend de produção para bancos, pagamentos e serviços financeiros regulados. Especialista em Java e Kotlin sobre o ecossistema Spring / Spring Boot. Hands-on em PostgreSQL, MongoDB, MySQL, Oracle, MSSQL, Redis. Experiência com infraestrutura AWS, containerização Docker, CI/CD (GitLab, Harness, Travis), Terraform (IaC), observabilidade (Splunk, Grafana, Dynatrace), segurança de aplicação (Fortify, Sonar, CyberArk). Expertise em fintech brasileira: pagamento instantâneo Pix, automação fiscal SPED / eSocial / EFD-Reinf, conformidade com a LGPD, decisão de crédito. Português nativo; inglês fluente; espanhol intermediário.
+
+\section{Habilidades técnicas}
+\begin{itemize}
+\item \textbf{Linguagens}: Java (8, 11, 15, 16, 17, 21), Kotlin, Python, Shell / Bash, C, C++
+\item \textbf{Frameworks}: Spring, Spring Boot, Spring Security, Spring Data, Javalin, Koin, JSF, PrimeFaces, Java EE
+\item \textbf{Bancos de dados}: PostgreSQL, MongoDB, MySQL, Oracle SQL Server, Microsoft SQL Server, Redis
+\item \textbf{Cloud \& DevOps}: AWS (SQS, SNS, S3, EC2, Lambda), Docker, Terraform, Harness, GitLab CI/CD, Travis CI, Maven, Ant
+\item \textbf{Observabilidade \& segurança}: Splunk, Grafana, Dynatrace, Graylog, LogDNA, Fortify, SonarQube, CyberArk
+\item \textbf{Sistema operacional}: Linux (uso diário desde 2009)
+\item \textbf{Metodologias}: Domain-Driven Design (DDD), Test-Driven Development (TDD), DevSecOps, CI/CD, Agile, DTAP
+\item \textbf{Domínios}: Bancário, pagamentos, Pix, POS / presencial, decisão de crédito, automação fiscal, LGPD
+\end{itemize}
+
+\section{Experiência profissional}
+
+\noindent\textbf{C6 Bank} -- Engenheiro de Software Sênior \hfill Abril 2025 -- Atual\\
+São Paulo, Brasil
+\begin{itemize}
+\item Desenha, implementa e mantém sistemas backend de alta disponibilidade para concessão de crédito em um dos maiores bancos digitais do Brasil
+\item Domain-Driven Design nos domínios de decisão de crédito em Kotlin e Spring
+\item Foco em segurança da informação: gestão de segredos, princípio do menor privilégio, CI/CD endurecido via Harness
+\item Observabilidade com Splunk e Grafana; camada de dados em MongoDB e PostgreSQL; deploys containerizados via Docker
+\end{itemize}
+
+\noindent\textbf{Fiserv} -- Engenheiro de Software \hfill Março 2024 -- Abril 2025\\
+São Paulo, Brasil
+\begin{itemize}
+\item Entrega de serviços backend para a plataforma POS de pagamentos presenciais
+\item Responsável pela postura de prevenção e recuperação de desastres em produção
+\item Liderou adoção de DevSecOps: gates Fortify e SonarQube em CI, CyberArk para segredos, pipelines de release endurecidos
+\item Operação de produção com Splunk e Dynatrace; camada de dados Oracle SQL Server e Redis
+\item Documentação técnica e processual que suporta rotação de time
+\end{itemize}
+
+\noindent\textbf{Conta Azul} -- Desenvolvedor Backend \hfill Setembro 2021 -- Agosto 2022\\
+São Paulo, Brasil
+\begin{itemize}
+\item Construção de motor de automação de obrigações fiscais brasileiras (SPED, eSocial, EFD-Reinf)
+\item Processamento periódico e orientado a eventos sobre primitivos nativos AWS (SQS, S3)
+\item Infraestrutura como código via Terraform; camada de dados PostgreSQL
+\item Java 8/11/15/16 com Spring; observabilidade via LogDNA
+\end{itemize}
+
+\noindent\textbf{Grão} -- Desenvolvedor Backend \hfill Dezembro 2020 -- Setembro 2021\\
+São Paulo, Brasil
+\begin{itemize}
+\item Implementação da integração com o sistema brasileiro de pagamento instantâneo (Pix) em Kotlin, do kickoff ao lançamento em produção
+\item Modelagem de esquema e entidades focada em performance
+\item Design de APIs REST escaláveis; automação de QA no loop de entrega
+\item Ambientes de teste e produção containerizados; Java EE, Kotlin, MySQL, Spring, Feign Client, Firebase, GitLab CI/CD, Graylog, Newman/Postman, Tomcat, Svelte
+\end{itemize}
+
+\noindent\textbf{Raia Drogasil} -- Desenvolvedor de Software \hfill Janeiro 2020 -- Dezembro 2020\\
+São Paulo, Brasil
+\begin{itemize}
+\item Adequação do software de Operações de Venda à Lei Geral de Proteção de Dados (LGPD)
+\item Integração de leitores biométricos e impressoras térmicas no stack de loja
+\item Modelagem diária em Oracle SQL; Java EE, Java Applets, JSF/PrimeFaces, JBoss, WebLogic, Spring
+\item Primeiro contato com DTAP (Development-Test-Acceptance-Production); TDD
+\end{itemize}
+
+\noindent\textbf{Sys4Bank} -- Desenvolvedor de Software \hfill Março 2016 -- Janeiro 2020\\
+São Paulo, Brasil
+\begin{itemize}
+\item Desenvolvimento backend para infraestrutura bancária: fluxos Corporativo, Financeiro, Crédito e Conta
+\item Introdução de containerização e pipelines Travis CI em time vindo de deploy manual
+\item Modelagem diária em Microsoft SQL Server
+\item Java, Spring Boot, MSSQL, Maven, Ant, Bash, Linux
+\end{itemize}
+
+\section{Formação}
+\noindent\textbf{Bacharelado em Ciência da Computação}, Universidade Presbiteriana Mackenzie, São Paulo, Brasil -- 2020\\
+Monografia: \textit{Três experimentos com escalonamento assíncrono de atualização por prioridade de vizinhança em autômatos celulares elementares}
+
+\section{Open source}
+\begin{itemize}
+\item \textbf{RAT-via-Telegram} -- 600+ estrelas -- Windows RAT via Telegram (Python) -- github.com/mvrozanti/RAT-via-Telegram
+\item \textbf{dte} -- 300+ estrelas -- Linguagem de processamento de data e hora -- github.com/mvrozanti/dte
+\item \textbf{yawc} -- Yet Another WhatsApp Client -- github.com/mvrozanti/yawc
+\item \textbf{dotty} -- Versionamento e sincronização de dotfiles -- github.com/mvrozanti/dotty
+\end{itemize}
+
+\section{Idiomas}
+Português (nativo), Inglês (fluente), Espanhol (intermediário)
+
+\end{document}

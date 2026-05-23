@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{0D5C63}
+\definecolor{muted}{HTML}{606060}
+
+\setlist[itemize]{leftmargin=0.9em, topsep=0pt, itemsep=1pt, parsep=0pt}
+\titleformat{\section}{\small\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-2pt}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\setlength{\columnsep}{0.8cm}
+\columnratio{0.32,0.68}
+
+\newcommand{\role}[3]{\textbf{#1}\\\textit{\color{muted}#2}\hfill\footnotesize\color{muted}#3\par}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent
+\begin{minipage}{0.7\linewidth}
+{\Huge\bfseries Marcelo Vironda Rozanti}\\[2pt]
+{\large\color{accent}Senior Backend Engineer · JVM · Fintech · SRE-leaning}
+\end{minipage}\hfill
+\begin{minipage}{0.28\linewidth}
+\footnotesize\raggedleft
+\faEnvelope\ mvrozanti@hotmail.com\\
+\faMapMarker*\ São Paulo, BR\\
+\faGithub\ github.com/mvrozanti\\
+\faLinkedin\ linkedin.com/in/mvrozanti
+\end{minipage}
+\vspace{6pt}
+
+\begin{paracol}{2}
+
+\section{Profile}
+\footnotesize Nine years on JVM in regulated Brazilian fintech. Owns critical services end-to-end. Recent focus: credit decisioning, instant payments, fiscal automation, POS / acquirer.
+
+\section{Core stack}
+\footnotesize
+\textbf{Lang} Kotlin, Java, Python, Shell, C/C++\\
+\textbf{JVM} Spring, Spring Boot, Javalin, Koin\\
+\textbf{Data} Postgres, Mongo, MySQL, Oracle, MSSQL, Redis\\
+\textbf{Platform} Docker, AWS, Terraform, GitLab CI, Harness, Linux\\
+\textbf{Observe} Splunk, Grafana, Dynatrace, Graylog\\
+\textbf{Security} Fortify, Sonar, CyberArk
+
+\section{Spoken}
+\footnotesize Portuguese (native)\\English (fluent)\\Spanish (intermediate)
+
+\section{Education}
+\footnotesize\textbf{B.Sc.\ Computer Science}\\Mackenzie · 2020
+
+\section{Open source}
+\footnotesize
+\textbf{\href{https://github.com/mvrozanti/RAT-via-Telegram}{RAT-via-Telegram}} \hfill ★600+\\
+Windows RAT over Telegram\par
+\smallskip
+\textbf{\href{https://github.com/mvrozanti/dte}{dte}} \hfill ★300+\\Date \& time DSL\par
+\smallskip
+\textbf{\href{https://github.com/mvrozanti/yawc}{yawc}}\\WhatsApp client experiment\par
+\smallskip
+\textbf{\href{https://github.com/mvrozanti/dotty}{dotty}}\\Dotfiles versioning
+
+\switchcolumn
+
+\section{Experience}
+\footnotesize
+
+\role{Senior Engineer}{C6 Bank · São Paulo}{04/2025 -- present}
+\begin{itemize}
+\item HA credit-granting platform. Kotlin/Spring; Mongo+Postgres; Docker; Harness pipeline.
+\item DDD across credit-decision domains; observability via Splunk+Grafana.
+\end{itemize}
+\medskip
+
+\role{Software Engineer}{Fiserv · São Paulo}{03/2024 -- 04/2025}
+\begin{itemize}
+\item POS platform. Led DevSecOps adoption: Fortify+Sonar gating, CyberArk secrets, hardened CI/CD on Mercurial flows.
+\item Owned disaster-prevention \& recovery posture; codified runbooks, alerting, rehearsals.
+\end{itemize}
+\medskip
+
+\role{Backend Developer}{Conta Azul · São Paulo}{09/2021 -- 08/2022}
+\begin{itemize}
+\item Designed event-driven fiscal-obligations engine (SPED, eSocial, EFD-Reinf) on AWS SQS/S3.
+\item Terraform IaC; Postgres; Java/Spring; LogDNA observability.
+\end{itemize}
+\medskip
+
+\role{Backend Developer}{Grão · São Paulo}{12/2020 -- 09/2021}
+\begin{itemize}
+\item Implemented Pix instant-payment backend in Kotlin, spec to launch.
+\item Containerized envs; access-pattern-first schemas; scalable REST APIs.
+\item Java EE/Kotlin/Spring/MySQL/Feign/GitLab CI/Graylog.
+\end{itemize}
+\medskip
+
+\role{Developer}{Raia Drogasil · São Paulo}{01/2020 -- 12/2020}
+\begin{itemize}
+\item Brought selling-operations software into LGPD compliance.
+\item Integrated biometric readers and thermal printers; daily Oracle.
+\item Java EE/JSF-PrimeFaces/JBoss/WebLogic/DTAP/TDD.
+\end{itemize}
+\medskip
+
+\role{Developer}{Sys4Bank · São Paulo}{03/2016 -- 01/2020}
+\begin{itemize}
+\item Banking back-office services on Spring Boot.
+\item Introduced containerization and Travis CI; daily MSSQL.
+\end{itemize}
+
+\end{paracol}
+
+\end{document}

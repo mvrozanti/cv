@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.3cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{0E7C7B}
+\definecolor{heading}{HTML}{1A1A1A}
+\definecolor{muted}{HTML}{707070}
+
+\hypersetup{hidelinks}
+
+\setlist[itemize]{leftmargin=1.1em, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+\titleformat{\section}{\Large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\rule{\linewidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\newcommand{\role}[4]{\noindent\textbf{\large #1} \textcolor{accent}{·} \textbf{#2} \hfill \textcolor{muted}{#3, #4}\par\vspace{2pt}}
+\newcommand{\stack}[1]{\par\vspace{2pt}\textcolor{muted}{\small \faToolbox\ #1}\par}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\Huge\bfseries\color{heading} Marcelo Vironda Rozanti}\\[2pt]
+{\large\color{accent} Backend Engineer · Open-source builder}\\[4pt]
+\small
+\faEnvelope\ \href{mailto:mvrozanti@hotmail.com}{mvrozanti@hotmail.com} \quad
+\faMapMarker*\ São Paulo, Brazil \quad
+\faGithub\ \href{https://github.com/mvrozanti}{github.com/mvrozanti} \quad
+\faGlobe\ \href{https://mvrozanti.github.io}{mvrozanti.github.io} \quad
+\faLinkedin\ \href{https://linkedin.com/in/mvrozanti}{linkedin.com/in/mvrozanti}
+\end{center}
+
+\section{TL;DR}
+I write production backend systems for a living -- nine years inside Brazilian banking and fintech, JVM all the way -- and I write tools and toys outside of work because I cannot help it. The OSS list below isn't padding; it's the thing.
+
+\section{Open source}
+\role{RAT-via-Telegram}{Windows Remote Administration Tool over Telegram}{\faStar\ 600+}{Python}
+Long-running personal project that ended up being most people's first encounter with my name. Cross-platform-ish Windows agent driven by Telegram bot commands. Survives despite my benign neglect.\par\vspace{3pt}
+\href{https://github.com/mvrozanti/RAT-via-Telegram}{\small\faGithub\ github.com/mvrozanti/RAT-via-Telegram}\par\vspace{6pt}
+
+\role{dte}{A small language for date \& time}{\faStar\ 300+}{Python}
+A DSL for the kind of date arithmetic the GNU \texttt{date} CLI makes you regret asking for. Lexer/parser/evaluator, CLI, doc.\par\vspace{3pt}
+\href{https://github.com/mvrozanti/dte}{\small\faGithub\ github.com/mvrozanti/dte}\par\vspace{6pt}
+
+\role{yawc}{Yet Another WhatsApp Client}{}{}
+Headless / scriptable WhatsApp client experiment.\par\vspace{3pt}
+\href{https://github.com/mvrozanti/yawc}{\small\faGithub\ github.com/mvrozanti/yawc}\par\vspace{6pt}
+
+\role{dotty}{Dotfiles sync \& version manager}{}{}
+Pre-Nix attempt at making dotfile management not painful. Bash, sane defaults.\par\vspace{3pt}
+\href{https://github.com/mvrozanti/dotty}{\small\faGithub\ github.com/mvrozanti/dotty}
+
+\section{Day job}
+
+\role{Senior Engineer}{C6 Bank}{04/2025 -- present}{São Paulo}
+High-availability Kotlin services for credit granting. DDD codebase, observability and recovery treated as first-class. Stack: Kotlin · Spring · MongoDB · PostgreSQL · Docker · Harness · Splunk · Grafana.
+
+\role{Software Engineer}{Fiserv}{03/2024 -- 04/2025}{São Paulo}
+POS-platform engineering; led DevSecOps adoption (Fortify, Sonar, CyberArk in CI); owned disaster-prevention and recovery posture. Stack: Spring · Oracle SQL · Docker · Splunk · Dynatrace · Mercurial · Redis.
+
+\role{Backend Developer}{Conta Azul}{09/2021 -- 08/2022}{São Paulo}
+Built fiscal-obligations automation (SPED/eSocial/EFD-Reinf). AWS-native, Terraform IaC.
+
+\role{Backend Developer}{Grão}{12/2020 -- 09/2021}{São Paulo}
+Pix instant-payment backend in Kotlin, kickoff through launch. Containerized envs.
+
+\role{Developer}{Raia Drogasil}{01/2020 -- 12/2020}{São Paulo}
+LGPD-compliance retrofit of selling-operations software; biometric + thermal-printer integration.
+
+\role{Developer}{Sys4Bank}{03/2016 -- 01/2020}{São Paulo}
+Banking back-office on Spring Boot; introduced containers and Travis CI.
+
+\section{Skills}
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{Languages} & Kotlin, Java, Python, Shell, C/C++ \\
+\textbf{JVM} & Spring, Spring Boot, Javalin, Koin \\
+\textbf{Data} & Postgres, Mongo, MySQL, Oracle, MSSQL, Redis \\
+\textbf{Platform} & Docker, AWS, Terraform, GitLab CI, Harness, Linux \\
+\textbf{Spoken} & PT (native), EN (fluent), ES (intermediate) \\
+\end{tabularx}
+
+\section{Education}
+\noindent\textbf{B.Sc.\ Computer Science}, Mackenzie, São Paulo \hfill 2020
+
+\end{document}

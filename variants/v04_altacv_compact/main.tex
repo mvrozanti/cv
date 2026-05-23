@@ -1,0 +1,67 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[9pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=0.4cm,right=8cm,marginparwidth=6.2cm,marginparsep=0.7cm,top=0.8cm,bottom=0.8cm}
+
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[default]{lato}
+\fi
+\usepackage{hyperref}\hypersetup{hidelinks}
+
+\definecolor{Charcoal}{HTML}{2B2B2B}
+\definecolor{Accent}{HTML}{0E7C7B}
+\colorlet{heading}{Charcoal}\colorlet{accent}{Accent}
+\colorlet{emphasis}{Accent}\colorlet{body}{Charcoal}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{refs.bib}
+
+\begin{document}
+\name{Marcelo Vironda Rozanti}
+\tagline{Senior Backend Engineer · JVM \& Fintech}
+\personalinfo{%
+  \email{mvrozanti@hotmail.com}
+  \location{São Paulo}
+  \homepage{mvrozanti.github.io}\quad
+  \linkedin{linkedin.com/in/mvrozanti}\quad
+  \github{github.com/mvrozanti}
+}
+
+\begin{fullwidth}\makecvheader\end{fullwidth}
+
+\cvsection[sidebar]{Experience}
+
+\cvevent{Senior Engineer}{\href{https://www.c6bank.com}{C6 Bank}}{04/2025 -- now}{}
+HA credit-granting services; Kotlin/Spring on Mongo + Postgres; DDD; observability via Splunk/Grafana.
+
+\divider
+
+\cvevent{Engineer}{\href{https://www.fiserv.com}{Fiserv}}{03/2024 -- 04/2025}{}
+POS platform; DevSecOps lead; Fortify/Sonar/CyberArk in CI; Splunk + Dynatrace; disaster prevention \& recovery.
+
+\divider
+
+\cvevent{Backend Engineer}{\href{https://www.contaazul.com}{Conta Azul}}{09/2021 -- 08/2022}{}
+Fiscal-obligations automation (SPED/eSocial/EFD-Reinf) on AWS; Terraform IaC.
+
+\divider
+
+\cvevent{Backend Engineer}{\href{https://www.grao.com.br}{Grão}}{12/2020 -- 09/2021}{}
+Pix instant-payment backend in Kotlin; containerized envs; throughput-focused REST APIs.
+
+\divider
+
+\cvevent{Developer}{\href{https://www.rd.com.br}{Raia Drogasil}}{01/2020 -- 12/2020}{}
+LGPD-compliance retrofit; biometric + thermal-printer integration; Oracle daily.
+
+\divider
+
+\cvevent{Developer}{\href{https://www.sys4bank.com.br}{Sys4Bank}}{03/2016 -- 01/2020}{}
+Banking back-office on Spring Boot; introduced containers + Travis CI.
+
+\clearpage
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.7cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{264653}
+\definecolor{muted}{HTML}{606060}
+
+\setlist[itemize]{leftmargin=1em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-3pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\newcommand{\engagement}[3]{\noindent\textbf{#1} \textcolor{accent}{·} \textbf{#2} \hfill \textcolor{muted}{#3}\par\smallskip}
+\newcommand{\starstep}[1]{\noindent\textbf{#1.}\hspace{0.4em}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Marcelo Vironda Rozanti}\\[2pt]
+{\large\color{accent} Senior Backend Engineer · Contract \& Advisory}\\[3pt]
+{\small mvrozanti@hotmail.com · São Paulo, BR · linkedin.com/in/mvrozanti · github.com/mvrozanti · mvrozanti.github.io}
+\end{center}
+
+\section{Engagement profile}
+\small
+Senior JVM backend engineer with nine years inside regulated Brazilian fintech. Engagements are framed below as situation / task / action / result for fast scanning.
+
+\section{Engagements}
+
+\engagement{C6 Bank}{Senior Engineer · Credit Granting}{04/2025 -- present, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} High-availability credit-granting platform inside one of Brazil's largest digital banks; regulated, security-sensitive, audited.
+\item \textbf{Task:} Design and operate Kotlin services for credit decisioning; align with DDD across credit-decision domains.
+\item \textbf{Action:} Own architecture and implementation; champion observability, idempotency and recovery patterns; harden release pipeline via Harness.
+\item \textbf{Result:} Production credit-decision services running and evolving; team confidence in deploying critical paths increased.
+\end{itemize}\medskip
+
+\engagement{Fiserv}{Software Engineer · POS Platform}{03/2024 -- 04/2025, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} Acquirer-scale card-present payments platform with strong reliability requirements and ad-hoc security posture.
+\item \textbf{Task:} Tighten DevSecOps and disaster-prevention / recovery practices on the POS platform.
+\item \textbf{Action:} Introduced Fortify + Sonar gating, CyberArk-backed secrets, hardened CI / CD on Mercurial flows; codified runbooks and alerting.
+\item \textbf{Result:} Security gating became baseline; ad-hoc credential handling eliminated; durable process documentation that outlived team rotation.
+\end{itemize}\medskip
+
+\engagement{Conta Azul}{Backend Developer · Fiscal Automation}{09/2021 -- 08/2022, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} SMB accounting product carrying significant manual workload around Brazilian fiscal submissions.
+\item \textbf{Task:} Build automation that handles periodic and ad-hoc SPED / eSocial / EFD-Reinf obligations.
+\item \textbf{Action:} Designed event-driven engine on AWS SQS / S3 with Terraform IaC and Postgres.
+\item \textbf{Result:} Periodic and on-demand fiscal submissions executed without human intervention.
+\end{itemize}\medskip
+
+\engagement{Grão}{Backend Developer · Pix Launch}{12/2020 -- 09/2021, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} Brazilian central bank mandating Pix instant payments across financial institutions.
+\item \textbf{Task:} Implement Grão's Pix backend in Kotlin from spec to launch.
+\item \textbf{Action:} Designed access-pattern-first schemas; containerized test and production envs; built scalable REST APIs with QA automation in the loop.
+\item \textbf{Result:} Pix integration shipped on regulatory timeline.
+\end{itemize}\medskip
+
+\engagement{Raia Drogasil}{Developer · LGPD Compliance}{01/2020 -- 12/2020, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} LATAM's largest drugstore chain entering LGPD enforcement window with legacy selling-operations software.
+\item \textbf{Task:} Retrofit data-handling paths to meet LGPD; integrate biometric and thermal-printer hardware.
+\item \textbf{Action:} Rewrote affected data flows; built hardware-integration drivers and JSF / PrimeFaces front-ends; daily Oracle modeling.
+\item \textbf{Result:} Selling-operations software compliant for LGPD enforcement; hardware integrations shipped to stores.
+\end{itemize}\medskip
+
+\engagement{Sys4Bank}{Developer · Banking Back-Office}{03/2016 -- 01/2020, São Paulo}
+\begin{itemize}
+\item \textbf{Situation:} Banking-software house with manual deployment culture.
+\item \textbf{Task:} Build Spring Boot services for corporate, financial, credit and account workflows; improve release practice.
+\item \textbf{Action:} Introduced containerization and Travis CI alongside daily MSSQL modeling.
+\item \textbf{Result:} Reproducible pipelines replacing manual steps; team release toil reduced.
+\end{itemize}
+
+\section{Open source}
+\small
+\textbf{RAT-via-Telegram} (★ 600+) · \textbf{dte} (★ 300+) · \textbf{yawc} · \textbf{dotty} \hfill github.com/mvrozanti
+
+\section{Skills}
+\small
+\textbf{JVM:} Kotlin, Java, Spring, Spring Boot, Javalin, Koin\\
+\textbf{Data:} Postgres, Mongo, MySQL, Oracle, MSSQL, Redis\\
+\textbf{Platform:} Docker, AWS, Terraform, GitLab CI, Harness, Linux\\
+\textbf{Other:} Python, Shell, C/C++; Splunk, Grafana, Dynatrace, Graylog\\
+\textbf{Spoken:} Portuguese (native), English (fluent), Spanish (intermediate)
+
+\section{Education}
+\small\textbf{B.Sc.\ Computer Science}, Universidade Presbiteriana Mackenzie, São Paulo \hfill 2020
+
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{green}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.82]{geometry}
+\usepackage{hyperref}
+
+\name{Marcelo}{Vironda Rozanti}
+\title{Senior Backend Engineer}
+\address{São Paulo, Brazil}{}{}
+\email{mvrozanti@hotmail.com}
+\homepage{mvrozanti.github.io}
+\social[linkedin]{mvrozanti}
+\social[github]{mvrozanti}
+
+\begin{document}
+\makecvtitle
+
+\section{What I do}
+I build production backend systems on the JVM -- mostly Kotlin and Java with Spring -- for companies where the cost of getting it wrong is real (banks, payment processors, fiscal automation). I have spent the last nine years inside Brazilian fintech, and I am happiest when I own a service end-to-end.
+
+\section{Experience}
+
+\cventry{04/2025 -- present}{Senior Engineer}{C6 Bank}{São Paulo}{}{%
+Credit granting. High-availability Kotlin services on Spring + MongoDB + PostgreSQL, container-deployed via Harness; observability via Splunk and Grafana; DDD codebase.}
+
+\cventry{03/2024 -- 04/2025}{Software Engineer}{Fiserv}{São Paulo}{}{%
+POS-platform engineering. DevSecOps lead; Fortify + Sonar + CyberArk in CI; disaster prevention and recovery for production card-present services.}
+
+\cventry{09/2021 -- 08/2022}{Backend Developer}{Conta Azul}{São Paulo}{}{%
+Built fiscal-obligations automation (SPED, eSocial, EFD-Reinf) for SMB customers. AWS, Terraform IaC, Postgres.}
+
+\cventry{12/2020 -- 09/2021}{Backend Developer}{Grão}{São Paulo}{}{%
+Implemented Pix instant-payment backend in Kotlin. Containerized environments, scalable REST APIs.}
+
+\cventry{01/2020 -- 12/2020}{Developer}{Raia Drogasil}{São Paulo}{}{%
+Brought selling-operations software into LGPD compliance. Biometric and thermal-printer integration; daily Oracle.}
+
+\cventry{03/2016 -- 01/2020}{Developer}{Sys4Bank}{São Paulo}{}{%
+Banking back-office on Spring Boot. Introduced containerization and Travis CI to the team.}
+
+\section{Open source}
+\cvitem{}{\href{https://github.com/mvrozanti/RAT-via-Telegram}{RAT-via-Telegram} (600+ stars), \href{https://github.com/mvrozanti/dte}{dte} (300+ stars), \href{https://github.com/mvrozanti/dotty}{dotty}}
+
+\section{Education}
+\cventry{2020}{B.Sc.\ Computer Science}{Mackenzie}{São Paulo}{}{}
+
+\section{Skills}
+\cvitem{Core}{Kotlin, Java, Spring \& Spring Boot}
+\cvitem{Data}{Postgres, Mongo, Oracle, MSSQL, Redis}
+\cvitem{Platform}{Docker, AWS, Terraform, GitLab CI, Harness}
+\cvitem{Other}{Python, Shell, C/C++; Linux daily}
+\cvitem{Spoken}{Portuguese (native), English (fluent), Spanish (intermediate)}
+
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{1565C0}
+\definecolor{muted}{HTML}{606060}
+
+\setlist[itemize]{leftmargin=1em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-3pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Marcelo Vironda Rozanti}\\[2pt]
+{\large\color{accent} Senior Backend Engineer}\\[3pt]
+{\small mvrozanti@hotmail.com · São Paulo, BR · linkedin.com/in/mvrozanti · github.com/mvrozanti · mvrozanti.github.io}
+\end{center}
+
+\section{Profile}
+9+ years building production backend systems on the JVM (Kotlin / Java + Spring) for regulated Brazilian fintech. Owns critical services end-to-end -- design through operation. Recent depth: credit decisioning, instant payments, fiscal automation, POS / acquirer.
+
+\section{Experience}
+
+\noindent\textbf{C6 Bank} — Senior Software Engineer \hfill 04/2025 -- present\\
+{\small\color{muted}Kotlin · Spring · Mongo · Postgres · Docker · Harness · Splunk · Grafana · DDD}
+\begin{itemize}
+\item Designed and shipped high-availability credit-granting services by owning architecture, implementation, and on-call rotation, improving the team's confidence in deploying to production credit paths.
+\item Drove domain-driven design across credit-decision domains by extracting bounded contexts and tightening service boundaries, reducing cross-team coupling on shared models.
+\item Hardened the release pipeline by introducing security gates and secrets-management discipline in Harness, raising the security posture of every shipped change.
+\end{itemize}
+
+\noindent\textbf{Fiserv} — Software Engineer \hfill 03/2024 -- 04/2025\\
+{\small\color{muted}Spring · Oracle SQL · Docker · Splunk · Dynatrace · Fortify · Sonar · CyberArk · Redis · Mercurial}
+\begin{itemize}
+\item Led DevSecOps adoption on the POS platform by introducing Fortify and Sonar gating plus CyberArk-backed secrets, eliminating ad-hoc credential handling from the release flow.
+\item Owned disaster-prevention and recovery posture for production card-present services by codifying runbooks, alerting rules, and rehearsal procedures, reducing the team's MTTR exposure on incident scenarios.
+\item Hardened CI / CD over Mercurial flows by introducing pipeline gates, audit trails, and reproducible builds, removing manual approval bottlenecks.
+\end{itemize}
+
+\noindent\textbf{Conta Azul} — Backend Developer \hfill 09/2021 -- 08/2022\\
+{\small\color{muted}Java · Spring · AWS · Terraform · PostgreSQL · LogDNA}
+\begin{itemize}
+\item Automated periodic and ad-hoc Brazilian fiscal submissions (SPED, eSocial, EFD-Reinf) by designing an event-driven engine on AWS SQS and S3, removing manual work from the accounting product surface.
+\item Codified infrastructure as Terraform modules, enabling reproducible provisioning of fiscal-automation environments across non-prod and prod.
+\end{itemize}
+
+\noindent\textbf{Grão} — Backend Developer \hfill 12/2020 -- 09/2021\\
+{\small\color{muted}Kotlin · Java EE · Spring · MySQL · Feign · GitLab CI · Graylog}
+\begin{itemize}
+\item Implemented Brazilian Pix instant-payment backend in Kotlin by integrating with the central-bank-mandated rail from spec to launch, putting Grão on the Pix map at go-live.
+\item Designed performance-conscious schemas and REST APIs by modeling access patterns first, enabling throughput-stable behavior under load.
+\item Containerized test and production environments by introducing Docker-based pipelines, replacing snowflake-host development.
+\end{itemize}
+
+\noindent\textbf{Raia Drogasil} — Software Developer \hfill 01/2020 -- 12/2020\\
+{\small\color{muted}Java EE · Oracle SQL · JSF/PrimeFaces · JBoss · WebLogic · DTAP · TDD}
+\begin{itemize}
+\item Brought selling-operations software into LGPD compliance by retrofitting data-handling code paths during the law's enforcement window, closing the gap to the new data-protection bar.
+\item Integrated biometric readers and thermal printers into the in-store stack by writing hardware-specific Java drivers and integration layers.
+\end{itemize}
+
+\noindent\textbf{Sys4Bank} — Software Developer \hfill 03/2016 -- 01/2020\\
+{\small\color{muted}Java · Spring Boot · MSSQL · Maven · Ant · Bash · Travis CI · Linux}
+\begin{itemize}
+\item Introduced containerization and Travis CI by replacing manual deployment with reproducible pipelines, reducing release toil for a banking-back-office team.
+\item Built Spring Boot services backing corporate, financial, credit, and account workflows.
+\end{itemize}
+
+\section{Open source}
+\textbf{RAT-via-Telegram} (600+ ★) — Windows RAT over Telegram \quad
+\textbf{dte} (300+ ★) — Date/time DSL \quad
+\textbf{yawc} — WhatsApp client \quad
+\textbf{dotty} — Dotfiles manager \quad
+\textit{github.com/mvrozanti}
+
+\section{Education}
+\noindent\textbf{B.Sc.\ Computer Science}, Universidade Presbiteriana Mackenzie, São Paulo \hfill 2020
+
+\section{Skills}
+\textbf{Languages:} Kotlin, Java, Python, Shell, C/C++ \quad
+\textbf{JVM:} Spring, Spring Boot, Javalin, Koin \quad
+\textbf{Data:} Postgres, Mongo, MySQL, Oracle, MSSQL, Redis \quad
+\textbf{Platform:} Docker, AWS, Terraform, GitLab CI, Harness, Linux \quad
+\textbf{Spoken:} PT (native), EN (fluent), ES (intermediate)
+
+\end{document}

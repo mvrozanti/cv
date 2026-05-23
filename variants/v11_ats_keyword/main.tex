@@ -1,0 +1,110 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\setlist[itemize]{leftmargin=1.2em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\hrule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Marcelo Vironda Rozanti}\\[2pt]
+Senior Backend Engineer | Software Engineer | Java | Kotlin | Spring Boot\\[2pt]
+São Paulo, Brazil | mvrozanti@hotmail.com | linkedin.com/in/mvrozanti | github.com/mvrozanti | mvrozanti.github.io
+\end{center}
+
+\section{Professional Summary}
+Senior Backend Software Engineer with 9+ years of experience designing, building, and operating production-grade backend systems for banking, payments, and regulated financial services. Expert in Java and Kotlin on the Spring / Spring Boot ecosystem. Hands-on with PostgreSQL, MongoDB, MySQL, Oracle, MSSQL, Redis. Experienced in AWS cloud infrastructure, Docker containerization, CI/CD (GitLab, Harness, Travis), Terraform IaC, observability (Splunk, Grafana, Dynatrace), application security (Fortify, Sonar, CyberArk). Domain expertise in Brazilian fintech: Pix instant payments, SPED / eSocial / EFD-Reinf fiscal automation, LGPD data-protection compliance, credit decisioning. Native Portuguese; fluent English; intermediate Spanish.
+
+\section{Core Skills}
+\begin{itemize}
+\item \textbf{Programming languages}: Java (8, 11, 15, 16, 17, 21), Kotlin, Python, Shell / Bash, C, C++
+\item \textbf{Frameworks}: Spring, Spring Boot, Spring Security, Spring Data, Javalin, Koin, JSF, PrimeFaces, Java EE
+\item \textbf{Databases}: PostgreSQL, MongoDB, MySQL, Oracle SQL Server, Microsoft SQL Server, Redis
+\item \textbf{Cloud \& DevOps}: AWS (SQS, SNS, S3, EC2, Lambda), Docker, Kubernetes-adjacent, Terraform, Harness, GitLab CI / CD, Travis CI, Maven, Ant
+\item \textbf{Observability \& security}: Splunk, Grafana, Dynatrace, Graylog, LogDNA, Fortify, SonarQube, CyberArk
+\item \textbf{Operating systems}: Linux (daily driver since 2009)
+\item \textbf{Methodologies}: Domain-Driven Design (DDD), Test-Driven Development (TDD), DevSecOps, CI / CD, Agile, DTAP
+\item \textbf{Domains}: Banking, payments, Pix, POS / card-present, credit decisioning, fiscal automation, LGPD compliance
+\end{itemize}
+
+\section{Professional Experience}
+
+\noindent\textbf{C6 Bank} -- Senior Software Engineer \hfill April 2025 -- Present\\
+São Paulo, Brazil
+\begin{itemize}
+\item Design, implement, and maintain high-availability backend systems for credit granting at one of Brazil's largest digital banks
+\item Domain-Driven Design across credit-decision domains in Kotlin and Spring
+\item Information security focus: secrets management, least-privilege access, hardened CI / CD via Harness
+\item Observability via Splunk and Grafana; data layer on MongoDB and PostgreSQL; containerized deployments via Docker
+\end{itemize}
+
+\noindent\textbf{Fiserv} -- Software Engineer \hfill March 2024 -- April 2025\\
+São Paulo, Brazil
+\begin{itemize}
+\item Delivered POS-platform backend services for card-present payments
+\item Owned disaster-prevention and recovery posture for production services
+\item Led DevSecOps adoption: Fortify and SonarQube gating in CI, CyberArk for secrets, hardened release pipelines on Mercurial flows
+\item Operated production services with Splunk and Dynatrace; Oracle SQL Server and Redis data layer
+\item Authored technical and process documentation supporting team rotation
+\end{itemize}
+
+\noindent\textbf{Conta Azul} -- Backend Developer \hfill September 2021 -- August 2022\\
+São Paulo, Brazil
+\begin{itemize}
+\item Built fiscal-obligations automation engine for Brazilian SPED, eSocial, and EFD-Reinf submissions
+\item Periodic and event-driven processing on AWS-native primitives (SQS, S3)
+\item Infrastructure-as-code via Terraform; PostgreSQL data layer
+\item Java 8 / 11 / 15 / 16 with Spring; LogDNA observability
+\end{itemize}
+
+\noindent\textbf{Grão} -- Backend Developer \hfill December 2020 -- September 2021\\
+São Paulo, Brazil
+\begin{itemize}
+\item Implemented Brazilian instant-payment system (Pix) backend integration in Kotlin from kickoff through production launch
+\item Performance-focused database schema and entity modeling
+\item Scalable REST API design; QA automation in delivery loop
+\item Containerized test and production environments; Java EE, Kotlin, MySQL, Spring, Feign Client, Firebase, GitLab CI / CD, Graylog, Newman / Postman, Tomcat, Svelte
+\end{itemize}
+
+\noindent\textbf{Raia Drogasil} -- Software Developer \hfill January 2020 -- December 2020\\
+São Paulo, Brazil
+\begin{itemize}
+\item Brought selling-operations software into compliance with Brazilian LGPD data-protection law
+\item Integrated biometric readers and thermal printers in retail stack
+\item Daily Oracle SQL modeling; Java EE, Java Applets, JSF / PrimeFaces, JBoss, WebLogic, Spring
+\item First contact with DTAP (Development-Test-Acceptance-Production) phased deployment approach; TDD
+\end{itemize}
+
+\noindent\textbf{Sys4Bank} -- Software Developer \hfill March 2016 -- January 2020\\
+São Paulo, Brazil
+\begin{itemize}
+\item Backend development for banking infrastructure: corporate, financial, credit, and account workflows
+\item Introduced containerization and Travis CI / CD pipelines to a team coming from manual deployment
+\item Daily Microsoft SQL Server modeling
+\item Java, Spring Boot, MSSQL, Maven, Ant, Bash, Linux
+\end{itemize}
+
+\section{Education}
+\noindent\textbf{Bachelor of Science in Computer Science}, Universidade Presbiteriana Mackenzie, São Paulo, Brazil -- 2020\\
+Dissertation: \textit{Three Experiments with Asynchronous Update Schedule by Neighborhood Priority in Elementary Cellular Automata}
+
+\section{Open Source}
+\begin{itemize}
+\item \textbf{RAT-via-Telegram} -- 600+ stars -- Windows Remote Administration Tool via Telegram (Python) -- github.com/mvrozanti/RAT-via-Telegram
+\item \textbf{dte} -- 300+ stars -- Date and time processing language -- github.com/mvrozanti/dte
+\item \textbf{yawc} -- Yet Another WhatsApp Client -- github.com/mvrozanti/yawc
+\item \textbf{dotty} -- Dotfiles sync and version manager -- github.com/mvrozanti/dotty
+\end{itemize}
+
+\section{Languages}
+Portuguese (native), English (fluent), Spanish (intermediate)
+
+\end{document}

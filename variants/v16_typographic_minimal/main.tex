@@ -1,0 +1,72 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\setmainfont{EB Garamond}[Ligatures=TeX]
+
+\definecolor{muted}{HTML}{707070}
+
+\setlist[itemize]{leftmargin=1em, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+\pagestyle{empty}
+
+\newcommand{\sectionrule}[1]{\par\medskip\noindent\textsc{\small #1}\par\vspace{-2pt}\noindent\rule{2cm}{0.4pt}\par\smallskip}
+
+\begin{document}
+
+\noindent
+{\Large Marcelo Vironda Rozanti}\hfill\textit{\color{muted}\small backend engineer · são paulo, brazil}\\
+{\small mvrozanti@hotmail.com\quad·\quad mvrozanti.github.io\quad·\quad github.com/mvrozanti\quad·\quad linkedin.com/in/mvrozanti}
+
+\sectionrule{Profile}
+
+\noindent
+Nine years building production JVM systems for Brazilian banks, payments, and regulated fintech. Currently at C6 Bank on credit-granting. Comfortable owning critical services end-to-end -- design, implementation, security, observability, recovery.
+
+\sectionrule{Experience}
+
+\noindent
+\textbf{C6 Bank} \hfill \textit{senior engineer · 04/2025 -- present}\\
+High-availability credit-granting services in Kotlin / Spring. DDD codebase. Mongo, Postgres, Docker. Harness pipeline. Splunk + Grafana for observability.
+
+\medskip
+\noindent
+\textbf{Fiserv} \hfill \textit{software engineer · 03/2024 -- 04/2025}\\
+POS platform. Led DevSecOps -- Fortify, Sonar, CyberArk in CI. Owned disaster-prevention \& recovery posture. Spring, Oracle, Docker, Splunk, Dynatrace, Redis, Mercurial.
+
+\medskip
+\noindent
+\textbf{Conta Azul} \hfill \textit{backend developer · 09/2021 -- 08/2022}\\
+Fiscal-obligations automation (SPED, eSocial, EFD-Reinf) on AWS-native primitives, Terraform IaC.
+
+\medskip
+\noindent
+\textbf{Grão} \hfill \textit{backend developer · 12/2020 -- 09/2021}\\
+Implemented Pix instant-payment backend in Kotlin from spec to launch. Containerized envs, scalable REST APIs.
+
+\medskip
+\noindent
+\textbf{Raia Drogasil} \hfill \textit{developer · 01/2020 -- 12/2020}\\
+LGPD-compliance retrofit of selling-operations software. Biometric / thermal-printer hardware integration.
+
+\medskip
+\noindent
+\textbf{Sys4Bank} \hfill \textit{developer · 03/2016 -- 01/2020}\\
+Banking back-office on Spring Boot. Introduced containers and Travis CI.
+
+\sectionrule{Open source}
+\noindent
+\textit{RAT-via-Telegram} (★ 600+) · \textit{dte} (★ 300+) · \textit{yawc} · \textit{dotty}\hfill{\small github.com/mvrozanti}
+
+\sectionrule{Skills}
+\noindent
+Kotlin, Java, Python, Shell, C/C++. Spring \& Spring Boot. Postgres, Mongo, MySQL, Oracle, MSSQL, Redis. Docker, AWS, Terraform, Linux. Portuguese (native), English (fluent), Spanish (intermediate).
+
+\sectionrule{Education}
+\noindent
+B.Sc.\ Computer Science -- Universidade Presbiteriana Mackenzie, São Paulo, 2020.
+
+\end{document}

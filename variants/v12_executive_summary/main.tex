@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{14213D}
+\definecolor{muted}{HTML}{606060}
+
+\setlist[itemize]{leftmargin=1.2em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Marcelo Vironda Rozanti}\\[4pt]
+{\large\color{accent} Senior Backend Engineer · 9+ years in regulated fintech}\\[3pt]
+{\small São Paulo, Brazil · mvrozanti@hotmail.com · linkedin.com/in/mvrozanti · github.com/mvrozanti · mvrozanti.github.io}
+\end{center}
+
+\section{Executive Summary}
+I have spent the last nine years building backend systems for the parts of Brazilian fintech where things have to work: banking back-office, instant payments, fiscal automation, card-present acquiring, credit decisioning. I write Kotlin and Java on the Spring ecosystem, ship through hardened CI/CD, and operate what I write. I am most useful in teams that need a senior IC who can own a critical service end-to-end -- design, build, secure, ship, observe, recover -- without needing the surrounding architecture spelled out for them.
+
+\section{What I bring}
+\begin{itemize}
+\item \textbf{Regulated-industry instincts.} Pix at Grão, LGPD retrofit at Raia Drogasil, fiscal automation at Conta Azul, DevSecOps lead at Fiserv, credit-granting now at C6. The compliance and operational bar of each role was real.
+\item \textbf{Production ownership, not ticket execution.} I default to owning the path from design through observability through incident playbook.
+\item \textbf{Stack-agnostic, opinionated about practice.} JVM is home, but the things I care about -- correctness, observability, recovery, automation -- travel with me.
+\item \textbf{Builder outside work.} OSS projects with real users (RAT-via-Telegram, 600+ stars; dte, 300+).
+\end{itemize}
+
+\section{Experience}
+
+\noindent\textbf{Senior Engineer · C6 Bank} \hfill 04/2025 -- present\\
+{\small\color{muted}São Paulo · Kotlin · Spring · Mongo · Postgres · Docker · Harness · Splunk · Grafana · DDD}
+\begin{itemize}
+\item Own design and operation of high-availability credit-granting services in one of Brazil's largest digital banks.
+\item Drive DDD across credit-decision domains; treat observability, idempotency, and recovery as first-class.
+\end{itemize}
+
+\noindent\textbf{Software Engineer · Fiserv} \hfill 03/2024 -- 04/2025\\
+{\small\color{muted}São Paulo · Spring · Oracle SQL · Docker · Splunk · Dynatrace · Fortify · Sonar · CyberArk · Redis · Mercurial}
+\begin{itemize}
+\item Delivered POS-platform services at acquirer scale; owned disaster prevention and recovery posture.
+\item Led DevSecOps adoption: security scanning gates, CyberArk-backed secrets, hardened release pipelines.
+\end{itemize}
+
+\noindent\textbf{Backend Developer · Conta Azul} \hfill 09/2021 -- 08/2022\\
+{\small\color{muted}São Paulo · Java · Spring · AWS · Terraform · PostgreSQL · LogDNA}
+\begin{itemize}
+\item Built fiscal-obligations automation (SPED, eSocial, EFD-Reinf) for SMB accounting customers.
+\item AWS-native primitives, IaC via Terraform.
+\end{itemize}
+
+\noindent\textbf{Backend Developer · Grão} \hfill 12/2020 -- 09/2021\\
+{\small\color{muted}São Paulo · Kotlin · Java EE · Spring · MySQL · Feign · GitLab CI · Graylog}
+\begin{itemize}
+\item Implemented Pix instant-payment integration in Kotlin from kickoff through production launch -- central-bank-mandated rail.
+\item Performance-focused entity modeling, containerized environments, scalable REST APIs.
+\end{itemize}
+
+\noindent\textbf{Developer · Raia Drogasil} \hfill 01/2020 -- 12/2020\\
+{\small\color{muted}São Paulo · Java EE · Oracle SQL · JSF/PrimeFaces · JBoss · WebLogic · DTAP · TDD}
+\begin{itemize}
+\item Brought selling-operations software into LGPD compliance.
+\item Integrated biometric readers and thermal printers in retail stack.
+\end{itemize}
+
+\noindent\textbf{Developer · Sys4Bank} \hfill 03/2016 -- 01/2020\\
+{\small\color{muted}São Paulo · Java · Spring Boot · MSSQL · Maven · Ant · Bash · Travis CI · Linux}
+\begin{itemize}
+\item Banking back-office services: corporate, financial, credit, account workflows.
+\item Introduced containerization and Travis CI to a team coming from manual deployment.
+\end{itemize}
+
+\section{Education}
+\noindent\textbf{B.Sc.\ Computer Science} -- Universidade Presbiteriana Mackenzie, São Paulo \hfill 2020
+
+\section{Open source}
+\noindent
+\textbf{RAT-via-Telegram} (600+ ★) · \textbf{dte} (300+ ★) · \textbf{yawc} · \textbf{dotty} -- all at \texttt{github.com/mvrozanti}
+
+\section{Languages}
+Portuguese (native) · English (fluent) · Spanish (intermediate)
+
+\end{document}

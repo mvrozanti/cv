@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage[brazilian]{babel}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Lato}
+
+\definecolor{accent}{HTML}{14213D}
+\definecolor{muted}{HTML}{606060}
+
+\setlist[itemize]{leftmargin=1.2em, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}\MakeUppercase}{}{0pt}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries Marcelo Vironda Rozanti}\\[4pt]
+{\large\color{accent} Engenheiro de Software Backend Sênior · 9+ anos em fintech regulada}\\[3pt]
+{\small São Paulo, Brasil · mvrozanti@hotmail.com · linkedin.com/in/mvrozanti · github.com/mvrozanti · mvrozanti.github.io}
+\end{center}
+
+\section{Sumário executivo}
+Passei os últimos nove anos construindo sistemas backend para as partes da fintech brasileira em que as coisas precisam funcionar: back-office bancário, pagamentos instantâneos, automação fiscal, pagamentos presenciais, decisão de crédito. Escrevo Kotlin e Java sobre o ecossistema Spring, entrego por CI/CD endurecida e opero o que escrevo. Sou mais útil em times que precisam de um IC sênior capaz de assumir um serviço crítico de ponta a ponta -- desenho, construção, segurança, deploy, observabilidade, recuperação -- sem precisar que a arquitetura ao redor seja explicada.
+
+\section{O que trago}
+\begin{itemize}
+\item \textbf{Instintos de indústria regulada.} Pix na Grão, adequação à LGPD na Raia Drogasil, automação fiscal na Conta Azul, liderança de DevSecOps na Fiserv, concessão de crédito hoje no C6 Bank. A barra de cada papel foi real.
+\item \textbf{Postura de dono, não de executor de ticket.} Por padrão, assumo do desenho à observabilidade e ao runbook de incidente.
+\item \textbf{Agnóstico em stack, opinativo em prática.} JVM é casa, mas o que me importa -- correção, observabilidade, recuperação, automação -- viaja comigo.
+\item \textbf{Builder fora do expediente.} Projetos open source com usuários reais (RAT-via-Telegram, 600+ estrelas; dte, 300+).
+\end{itemize}
+
+\section{Experiência}
+
+\noindent\textbf{Engenheiro Sênior · C6 Bank} \hfill 04/2025 -- atual\\
+{\small\color{muted}São Paulo · Kotlin · Spring · Mongo · Postgres · Docker · Harness · Splunk · Grafana · DDD}
+\begin{itemize}
+\item Responsável pelo desenho e operação de serviços críticos de alta disponibilidade para concessão de crédito em um dos maiores bancos digitais do Brasil.
+\item Conduz DDD nos domínios de decisão de crédito; trata observabilidade, idempotência e recuperação como cidadãos de primeira classe.
+\end{itemize}
+
+\noindent\textbf{Engenheiro de Software · Fiserv} \hfill 03/2024 -- 04/2025\\
+{\small\color{muted}São Paulo · Spring · Oracle SQL · Docker · Splunk · Dynatrace · Fortify · Sonar · CyberArk · Redis · Mercurial}
+\begin{itemize}
+\item Entrega de serviços da plataforma POS em escala de adquirência; responsável por prevenção e recuperação de desastres.
+\item Liderou adoção de DevSecOps: gates de segurança, segredos via CyberArk, pipelines de release endurecidos.
+\end{itemize}
+
+\noindent\textbf{Desenvolvedor Backend · Conta Azul} \hfill 09/2021 -- 08/2022\\
+{\small\color{muted}São Paulo · Java · Spring · AWS · Terraform · PostgreSQL · LogDNA}
+\begin{itemize}
+\item Construiu automação de obrigações fiscais (SPED, eSocial, EFD-Reinf) para clientes contábeis SMB.
+\item Primitivos nativos AWS, IaC em Terraform.
+\end{itemize}
+
+\noindent\textbf{Desenvolvedor Backend · Grão} \hfill 12/2020 -- 09/2021\\
+{\small\color{muted}São Paulo · Kotlin · Java EE · Spring · MySQL · Feign · GitLab CI · Graylog}
+\begin{itemize}
+\item Implementou a integração com o Pix em Kotlin, do kickoff ao lançamento -- trilho mandatado pelo BCB.
+\item Modelagem focada em performance, ambientes containerizados, APIs REST escaláveis.
+\end{itemize}
+
+\noindent\textbf{Desenvolvedor · Raia Drogasil} \hfill 01/2020 -- 12/2020\\
+{\small\color{muted}São Paulo · Java EE · Oracle SQL · JSF/PrimeFaces · JBoss · WebLogic · DTAP · TDD}
+\begin{itemize}
+\item Adequou o software de Operações de Venda à LGPD.
+\item Integrou leitores biométricos e impressoras térmicas no stack de loja.
+\end{itemize}
+
+\noindent\textbf{Desenvolvedor · Sys4Bank} \hfill 03/2016 -- 01/2020\\
+{\small\color{muted}São Paulo · Java · Spring Boot · MSSQL · Maven · Ant · Bash · Travis CI · Linux}
+\begin{itemize}
+\item Serviços de back-office bancário: fluxos Corporativo, Financeiro, Crédito e Conta.
+\item Introduziu containerização e Travis CI em time vindo de deploy manual.
+\end{itemize}
+
+\section{Formação}
+\noindent\textbf{Bacharel em Ciência da Computação} -- Universidade Presbiteriana Mackenzie, São Paulo \hfill 2020
+
+\section{Open source}
+\noindent
+\textbf{RAT-via-Telegram} (600+ ★) · \textbf{dte} (300+ ★) · \textbf{yawc} · \textbf{dotty} -- todos em \texttt{github.com/mvrozanti}
+
+\section{Idiomas}
+Português (nativo) · Inglês (fluente) · Espanhol (intermediário)
+
+\end{document}

@@ -1,0 +1,94 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[default]{lato}
+\fi
+\usepackage{hyperref}\hypersetup{hidelinks}
+
+\definecolor{DarkTeal}{HTML}{1F4E5F}
+\definecolor{Accent}{HTML}{C9543C}
+\colorlet{heading}{DarkTeal}\colorlet{accent}{DarkTeal}
+\colorlet{emphasis}{Accent}\colorlet{body}{black}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{refs.bib}
+
+\begin{document}
+\name{Marcelo Vironda Rozanti}
+\tagline{Senior Backend Engineer · JVM · Fintech}
+\personalinfo{%
+  \email{mvrozanti@hotmail.com}
+  \location{São Paulo, Brazil}
+  \homepage{mvrozanti.github.io} \\
+  \linkedin{linkedin.com/in/mvrozanti}
+  \github{github.com/mvrozanti}
+}
+
+\begin{fullwidth}\makecvheader\end{fullwidth}
+
+\cvsection[sidebar]{Experience}
+
+\cvevent{Senior Engineer}{\href{https://www.c6bank.com}{C6 Bank}}{04/2025 -- present}{São Paulo}
+\begin{itemize}
+\item Own design and operation of high-availability credit-granting services for one of Brazil's largest digital banks.
+\item Drive domain-driven design across credit-decision domains; champion correctness, observability, and recovery patterns in production code paths.
+\item Information-security posture: secrets management, least-privilege access, hardened CI/CD via Harness.
+\end{itemize}
+\cvtag{Kotlin}\cvtag{Spring}\cvtag{MongoDB}\cvtag{PostgreSQL}\cvtag{Docker}\cvtag{Harness}\cvtag{Grafana}\cvtag{Splunk}\cvtag{Koin/Javalin}\cvtag{DDD}
+
+\divider
+
+\cvevent{Software Engineer}{\href{https://www.fiserv.com}{Fiserv}}{03/2024 -- 04/2025}{São Paulo}
+\begin{itemize}
+\item Delivered POS-platform services across global merchant footprint; owned monitoring, alerting, and disaster-recovery posture.
+\item Led DevSecOps efforts: Fortify + Sonar gating in CI/CD, CyberArk-backed secrets, hardened release pipelines.
+\item Wrote durable technical and process documentation that outlasts the team rotation.
+\end{itemize}
+\cvtag{Spring}\cvtag{Oracle SQL}\cvtag{Docker}\cvtag{Splunk}\cvtag{Dynatrace}\cvtag{Fortify}\cvtag{Sonar}\cvtag{CyberArk}\cvtag{Redis}\cvtag{Mercurial}
+
+\divider
+
+\cvevent{Backend Engineer}{\href{https://www.contaazul.com}{Conta Azul}}{Sep 2021 -- Aug 2022}{São Paulo}
+\begin{itemize}
+\item Built a fiscal-obligations engine that automated periodic and ad-hoc SPED / eSocial / EFD-Reinf submissions for SMB accounting customers.
+\item Ran the service on AWS-native primitives (queues, storage) with infrastructure-as-code via Terraform.
+\end{itemize}
+\cvtag{Java}\cvtag{Spring}\cvtag{AWS}\cvtag{Terraform}\cvtag{PostgreSQL}\cvtag{LogDNA}
+
+\divider
+
+\cvevent{Backend Engineer}{\href{https://www.grao.com.br}{Grão}}{Dec 2020 -- Sep 2021}{São Paulo}
+\begin{itemize}
+\item Implemented Pix instant-payment integration in Kotlin from kickoff through production launch -- a regulated, central-bank-mandated rail.
+\item Performance-focused schema and entity modeling; container-based test and production environments.
+\item Scalable REST API design with QA automation in the loop.
+\end{itemize}
+\cvtag{Kotlin}\cvtag{Java EE}\cvtag{Spring}\cvtag{MySQL}\cvtag{Feign}\cvtag{Firebase}\cvtag{GitLab CI}\cvtag{Graylog}\cvtag{Postman}\cvtag{Svelte}
+
+\divider
+
+\cvevent{Software Developer}{\href{https://www.rd.com.br}{Raia Drogasil}}{Jan 2020 -- Dec 2020}{São Paulo}
+\begin{itemize}
+\item Brought selling-operations software into LGPD compliance during the law's enforcement onset.
+\item Integrated biometric readers and thermal printers into the in-store stack; daily Oracle modeling.
+\end{itemize}
+\cvtag{Java EE}\cvtag{Oracle SQL}\cvtag{JSF/PrimeFaces}\cvtag{JBoss}\cvtag{WebLogic}\cvtag{DTAP}\cvtag{TDD}
+
+\divider
+
+\cvevent{Software Developer}{\href{https://www.sys4bank.com.br}{Sys4Bank}}{Mar 2016 -- Jan 2020}{São Paulo}
+\begin{itemize}
+\item First production-grade exposure: Spring Boot services backing banking back-office.
+\item Introduced containerization and Travis CI pipelines to a team coming from manual deployment.
+\end{itemize}
+\cvtag{Java}\cvtag{Spring Boot}\cvtag{MSSQL}\cvtag{Maven}\cvtag{Ant}\cvtag{Bash}\cvtag{Travis CI}\cvtag{Linux}
+
+\clearpage
+\end{document}
