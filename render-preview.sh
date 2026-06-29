@@ -13,5 +13,5 @@ for p in $(seq 1 "$npages"); do
   pages+=("$BUILD/$ID-p$p.png")
 done
 
-magick montage "${pages[@]}" -tile x1 -geometry +12+0 -background white "$ROOT/preview.png"
+magick montage "${pages[@]}" -tile 1x -geometry +0+12 -background white "$ROOT/preview.png"
 ls -la "$ROOT/preview.png"
