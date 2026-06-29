@@ -1,7 +1,7 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
 \documentclass[10pt,a4paper,ragged2e]{altacv}
 
-\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1cm,bottom=1cm}
+\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
 
 \ifxetexorluatex
   \setmainfont{Lato}
@@ -17,7 +17,6 @@
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
-\AtBeginEnvironment{itemize}{\small}
 
 \addbibresource{refs.bib}
 
@@ -36,7 +35,17 @@
 
 \cvsection[sidebar]{Experience}
 
-\cvevent{Senior Engineer}{\href{https://www.c6bank.com}{C6 Bank}}{04/2025 -- present}{São Paulo}
+\cvevent{Senior Software Engineer}{\href{https://www.srmasset.com.br}{SRM Asset}}{03/2026 -- present}{São Paulo}
+\begin{itemize}
+\item Build backend integrations with B3 and CERC registries for Duplicatas Escriturais (book-entry trade receivables) -- a regulated Brazilian receivables-registration rail.
+\item Integrate QI Tech banking- and credit-as-a-service APIs into the platform.
+\item AI-accelerated delivery: RAG over regulatory and API documentation, the BMAD agile-AI workflow, and LLM best practices -- evals, structured output, guardrails, MCP tooling.
+\end{itemize}
+\cvtag{Java}\cvtag{Spring}\cvtag{Aurora PostgreSQL}\cvtag{AWS}\cvtag{Docker}\cvtag{MyBatis}\cvtag{RabbitMQ}\cvtag{Keycloak}\cvtag{Terraform}\cvtag{RAG}\cvtag{BMAD}\cvtag{MCP}
+
+\divider
+
+\cvevent{Senior Engineer}{\href{https://www.c6bank.com}{C6 Bank}}{04/2025 -- 03/2026}{São Paulo}
 \begin{itemize}
 \item Own design and operation of high-availability credit-granting services for one of Brazil's largest digital banks.
 \item Drive domain-driven design across credit-decision domains; champion correctness, observability, and recovery patterns in production code paths.
@@ -53,6 +62,15 @@
 \item Wrote durable technical and process documentation that outlasts the team rotation.
 \end{itemize}
 \cvtag{Spring}\cvtag{Oracle SQL}\cvtag{Docker}\cvtag{Splunk}\cvtag{Dynatrace}\cvtag{Fortify}\cvtag{Sonar}\cvtag{CyberArk}\cvtag{Redis}\cvtag{Mercurial}
+
+\divider
+
+\cvevent{Backend Developer}{\href{https://www.upwork.com}{Upwork}}{Sep 2022 -- Feb 2024}{Remote (Freelance)}
+\begin{itemize}
+\item Solo contractor serving international clients: backend services and web data-extraction / automation pipelines across diverse sources.
+\item Daily English-language client communication, scoping, and delivery.
+\end{itemize}
+\cvtag{Python}\cvtag{lxml}\cvtag{BeautifulSoup}\cvtag{pup}\cvtag{Headless Chromium}\cvtag{PhantomJS}\cvtag{Bash}
 
 \divider
 

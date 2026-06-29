@@ -18,7 +18,13 @@ All CV variants must remain consistent with this file. If a variant needs a new 
 
 ## Roles (most recent first)
 
-### C6 Bank — Senior Engineer (04/2025 – present, São Paulo)
+### SRM Asset — Senior Software Engineer (03/2026 – present, São Paulo; started 09 Mar 2026)
+- Backend integrations with B3 and CERC registries for Duplicatas Escriturais (book-entry trade receivables) — a regulated Brazilian receivables-registration rail
+- Integration with QI Tech (banking-/credit-as-a-service)
+- AI-accelerated delivery: RAG over regulatory + API docs, BMAD agile-AI workflow, LLM best practices (prompt design, evals, structured output, guardrails, MCP)
+- Stack: Java (8–21), Spring, Aurora PostgreSQL, AWS, Docker, MyBatis, RabbitMQ, Keycloak, Terraform/HCL
+
+### C6 Bank — Senior Engineer (04/2025 – 03/2026, São Paulo)
 - Designs, implements, maintains high-availability critical systems for credit granting
 - Information security focus
 - Stack: MongoDB, PostgreSQL, Splunk, Kotlin, Harness, Spring, Docker, Grafana, Koin/Javalin, DDD
@@ -28,6 +34,11 @@ All CV variants must remain consistent with this file. If a variant needs a new 
 - Strong DevSecOps, CI/CD pipelines, technical+process documentation
 - Disaster prevention and recovery
 - Stack: Splunk, Dynatrace, Spring, Oracle SQL, Docker, Fortify, Sonar, Mercurial, CyberArk, Linux, Redis, ServiceNow
+
+### Freelance / Upwork — Backend Developer (Sep 2022 – Feb 2024, Remote)
+- Solo contractor on Upwork serving international clients (English-language communication)
+- Backend services plus web data-extraction / scraping and automation pipelines across diverse sources (intentionally non-specific on targets/clients)
+- Stack: Python (lxml, BeautifulSoup, pup), headless browsers (Chromium, PhantomJS), Bash
 
 ### Conta Azul — Backend Developer (Sep 2021 – Aug 2022, São Paulo)
 - Accounting SaaS
@@ -69,6 +80,12 @@ Programming:
 - Kotlin: 4
 - Python: 4
 - C/C++: 3
+
+AI-assisted development:
+- RAG, LLM evaluation, agentic coding, BMAD method, MCP, prompt engineering, structured output / guardrails
+
+Additional stack (2025–2026):
+- Aurora PostgreSQL, MyBatis, RabbitMQ, Keycloak, Terraform/HCL; B3 / CERC integrations, QI Tech, Duplicatas Escriturais
 
 Spoken:
 - Portuguese: 5 (native)
