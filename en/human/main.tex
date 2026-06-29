@@ -1,7 +1,7 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
 \documentclass[10pt,a4paper,ragged2e]{altacv}
 
-\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
+\geometry{left=0.5cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1cm,bottom=1cm}
 
 \ifxetexorluatex
   \setmainfont{Lato}
@@ -17,6 +17,7 @@
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+\AtBeginEnvironment{itemize}{\small}
 
 \addbibresource{refs.bib}
 
