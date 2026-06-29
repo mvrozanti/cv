@@ -35,7 +35,7 @@ All CV variants must remain consistent with this file. If a variant needs a new 
 - Disaster prevention and recovery
 - Stack: Splunk, Dynatrace, Spring, Oracle SQL, Docker, Fortify, Sonar, Mercurial, CyberArk, Linux, Redis, ServiceNow
 
-### Freelance / Upwork — Backend Developer (Sep 2022 – Feb 2024, Remote)
+### Freelance / Upwork — Backend Developer (Oct 2022 – Jan 2024, Remote)
 - Solo contractor on Upwork serving international clients (English-language communication)
 - Backend services plus web data-extraction / scraping and automation pipelines across diverse sources (intentionally non-specific on targets/clients)
 - Stack: Python (lxml, BeautifulSoup, pup), headless browsers (Chromium, PhantomJS), Bash
