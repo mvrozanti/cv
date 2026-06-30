@@ -18,6 +18,16 @@
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+\renewcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.85ex,inner ysep=0.6ex,text height=1.5ex,text depth=.25ex]{#1};%
+  \hspace{4pt plus 2pt minus 1pt}%
+}
+\renewcommand{\cvevent}[4]{%
+  {\large\color{emphasis}#1}%
+  \ifstrequal{#2}{}{}{ \textbf{\color{accent}#2}}%
+  \ifstrequal{#3}{}{}{\hfill{\small\color{body}\faCalendar\hspace{0.4em}#3}}%
+  \par\medskip\normalsize
+}
 
 \addbibresource{refs.bib}
 
@@ -43,7 +53,7 @@
 \item Integra as APIs da QI Tech (banking- e credit-as-a-service) à plataforma.
 \item Entrega acelerada por IA: RAG sobre documentação regulatória e de APIs, fluxo ágil-IA BMAD e boas práticas de LLM -- evals, saída estruturada, guardrails, MCP.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring} \cvtag{Aurora PostgreSQL} \cvtag{AWS} \cvtag{Docker} \cvtag{MyBatis} \cvtag{RabbitMQ} \cvtag{Keycloak} \cvtag{Terraform} \cvtag{RAG} \cvtag{BMAD} \cvtag{MCP}
+\cvtag{Java}\cvtag{Spring}\cvtag{Aurora PostgreSQL}\cvtag{AWS}\cvtag{Docker}\cvtag{MyBatis}\cvtag{RabbitMQ}\cvtag{Keycloak}\cvtag{Terraform}\cvtag{RAG}\cvtag{BMAD}\cvtag{MCP}
 
 \divider
 
@@ -53,7 +63,7 @@
 \item Conduz Domain-Driven Design nos domínios de decisão de crédito; trata observabilidade, idempotência e recuperação como cidadãos de primeira classe.
 \item Postura de segurança da informação: gestão de segredos, princípio do menor privilégio, CI/CD endurecido via Harness.
 \end{itemize}
-\cvtag{Kotlin} \cvtag{Spring} \cvtag{MongoDB} \cvtag{PostgreSQL} \cvtag{Docker} \cvtag{Harness} \cvtag{Grafana} \cvtag{Splunk} \cvtag{Koin/Javalin} \cvtag{DDD}
+\cvtag{Kotlin}\cvtag{Spring}\cvtag{MongoDB}\cvtag{PostgreSQL}\cvtag{Docker}\cvtag{Harness}\cvtag{Grafana}\cvtag{Splunk}\cvtag{Koin/Javalin}\cvtag{DDD}
 
 \divider
 
@@ -63,7 +73,7 @@
 \item Liderou iniciativas de DevSecOps: gates de Fortify e Sonar em CI/CD, segredos via CyberArk, pipelines de release endurecidos.
 \item Produziu documentação técnica e processual que sobrevive à rotação do time.
 \end{itemize}
-\cvtag{Spring} \cvtag{Oracle SQL} \cvtag{Docker} \cvtag{Splunk} \cvtag{Dynatrace} \cvtag{Fortify} \cvtag{Sonar} \cvtag{CyberArk} \cvtag{Redis} \cvtag{Mercurial}
+\cvtag{Spring}\cvtag{Oracle SQL}\cvtag{Docker}\cvtag{Splunk}\cvtag{Dynatrace}\cvtag{Fortify}\cvtag{Sonar}\cvtag{CyberArk}\cvtag{Redis}\cvtag{Mercurial}
 
 \divider
 
@@ -72,7 +82,7 @@
 \item Contratado autônomo para clientes internacionais: serviços backend e pipelines de extração de dados / automação web sobre fontes diversas.
 \item Comunicação diária em inglês com clientes: levantamento, escopo e entrega.
 \end{itemize}
-\cvtag{Python} \cvtag{lxml} \cvtag{BeautifulSoup} \cvtag{pup} \cvtag{Headless Chromium} \cvtag{PhantomJS} \cvtag{Bash}
+\cvtag{Python}\cvtag{lxml}\cvtag{BeautifulSoup}\cvtag{pup}\cvtag{Headless Chromium}\cvtag{PhantomJS}\cvtag{Bash}
 
 \divider
 
@@ -81,7 +91,7 @@
 \item Construiu motor de automação de obrigações fiscais que processa envios periódicos e pontuais de SPED, eSocial e EFD-Reinf para clientes contábeis SMB.
 \item Operado sobre primitivos nativos da AWS (filas, storage) com infraestrutura como código em Terraform.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring} \cvtag{AWS} \cvtag{Terraform} \cvtag{PostgreSQL} \cvtag{LogDNA}
+\cvtag{Java}\cvtag{Spring}\cvtag{AWS}\cvtag{Terraform}\cvtag{PostgreSQL}\cvtag{LogDNA}
 
 \divider
 
@@ -91,7 +101,7 @@
 \item Modelagem de esquemas e entidades focada em performance; ambientes containerizados de teste e produção.
 \item Design de APIs REST escaláveis com QA automatizada no loop.
 \end{itemize}
-\cvtag{Kotlin} \cvtag{Java EE} \cvtag{Spring} \cvtag{MySQL} \cvtag{Feign} \cvtag{Firebase} \cvtag{GitLab CI} \cvtag{Graylog} \cvtag{Postman} \cvtag{Svelte}
+\cvtag{Kotlin}\cvtag{Java EE}\cvtag{Spring}\cvtag{MySQL}\cvtag{Feign}\cvtag{Firebase}\cvtag{GitLab CI}\cvtag{Graylog}\cvtag{Postman}\cvtag{Svelte}
 
 \divider
 
@@ -100,7 +110,7 @@
 \item Adequou o software de Operações de Venda à LGPD no início da janela de exigibilidade da lei.
 \item Integrou leitores biométricos e impressoras térmicas ao stack de loja; modelagem diária em Oracle.
 \end{itemize}
-\cvtag{Java EE} \cvtag{Oracle SQL} \cvtag{JSF/PrimeFaces} \cvtag{JBoss} \cvtag{WebLogic} \cvtag{DTAP} \cvtag{TDD}
+\cvtag{Java EE}\cvtag{Oracle SQL}\cvtag{JSF/PrimeFaces}\cvtag{JBoss}\cvtag{WebLogic}\cvtag{DTAP}\cvtag{TDD}
 
 \divider
 
@@ -109,7 +119,7 @@
 \item Primeira exposição a produção de grau industrial: serviços Spring Boot sustentando o back-office bancário.
 \item Introduziu containerização e Travis CI em um time vindo de deploy manual.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring Boot} \cvtag{MSSQL} \cvtag{Maven} \cvtag{Ant} \cvtag{Bash} \cvtag{Travis CI} \cvtag{Linux}
+\cvtag{Java}\cvtag{Spring Boot}\cvtag{MSSQL}\cvtag{Maven}\cvtag{Ant}\cvtag{Bash}\cvtag{Travis CI}\cvtag{Linux}
 
 \clearpage
 \end{document}

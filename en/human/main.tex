@@ -17,6 +17,16 @@
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+\renewcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.85ex,inner ysep=0.6ex,text height=1.5ex,text depth=.25ex]{#1};%
+  \hspace{4pt plus 2pt minus 1pt}%
+}
+\renewcommand{\cvevent}[4]{%
+  {\large\color{emphasis}#1}%
+  \ifstrequal{#2}{}{}{ \textbf{\color{accent}#2}}%
+  \ifstrequal{#3}{}{}{\hfill{\small\color{body}\faCalendar\hspace{0.4em}#3}}%
+  \par\medskip\normalsize
+}
 
 \addbibresource{refs.bib}
 
@@ -42,7 +52,7 @@
 \item Integrate QI Tech banking- and credit-as-a-service APIs into the platform.
 \item AI-accelerated delivery: RAG over regulatory and API documentation, the BMAD agile-AI workflow, and LLM best practices -- evals, structured output, guardrails, MCP tooling.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring} \cvtag{Aurora PostgreSQL} \cvtag{AWS} \cvtag{Docker} \cvtag{MyBatis} \cvtag{RabbitMQ} \cvtag{Keycloak} \cvtag{Terraform} \cvtag{RAG} \cvtag{BMAD} \cvtag{MCP}
+\cvtag{Java}\cvtag{Spring}\cvtag{Aurora PostgreSQL}\cvtag{AWS}\cvtag{Docker}\cvtag{MyBatis}\cvtag{RabbitMQ}\cvtag{Keycloak}\cvtag{Terraform}\cvtag{RAG}\cvtag{BMAD}\cvtag{MCP}
 
 \divider
 
@@ -52,7 +62,7 @@
 \item Drive domain-driven design across credit-decision domains; champion correctness, observability, and recovery patterns in production code paths.
 \item Information-security posture: secrets management, least-privilege access, hardened CI/CD via Harness.
 \end{itemize}
-\cvtag{Kotlin} \cvtag{Spring} \cvtag{MongoDB} \cvtag{PostgreSQL} \cvtag{Docker} \cvtag{Harness} \cvtag{Grafana} \cvtag{Splunk} \cvtag{Koin/Javalin} \cvtag{DDD}
+\cvtag{Kotlin}\cvtag{Spring}\cvtag{MongoDB}\cvtag{PostgreSQL}\cvtag{Docker}\cvtag{Harness}\cvtag{Grafana}\cvtag{Splunk}\cvtag{Koin/Javalin}\cvtag{DDD}
 
 \divider
 
@@ -62,7 +72,7 @@
 \item Led DevSecOps efforts: Fortify + Sonar gating in CI/CD, CyberArk-backed secrets, hardened release pipelines.
 \item Wrote durable technical and process documentation that outlasts the team rotation.
 \end{itemize}
-\cvtag{Spring} \cvtag{Oracle SQL} \cvtag{Docker} \cvtag{Splunk} \cvtag{Dynatrace} \cvtag{Fortify} \cvtag{Sonar} \cvtag{CyberArk} \cvtag{Redis} \cvtag{Mercurial}
+\cvtag{Spring}\cvtag{Oracle SQL}\cvtag{Docker}\cvtag{Splunk}\cvtag{Dynatrace}\cvtag{Fortify}\cvtag{Sonar}\cvtag{CyberArk}\cvtag{Redis}\cvtag{Mercurial}
 
 \divider
 
@@ -71,7 +81,7 @@
 \item Solo contractor serving international clients: backend services and web data-extraction / automation pipelines across diverse sources.
 \item Daily English-language client communication, scoping, and delivery.
 \end{itemize}
-\cvtag{Python} \cvtag{lxml} \cvtag{BeautifulSoup} \cvtag{pup} \cvtag{Headless Chromium} \cvtag{PhantomJS} \cvtag{Bash}
+\cvtag{Python}\cvtag{lxml}\cvtag{BeautifulSoup}\cvtag{pup}\cvtag{Headless Chromium}\cvtag{PhantomJS}\cvtag{Bash}
 
 \divider
 
@@ -80,7 +90,7 @@
 \item Built a fiscal-obligations engine that automated periodic and ad-hoc SPED / eSocial / EFD-Reinf submissions for SMB accounting customers.
 \item Ran the service on AWS-native primitives (queues, storage) with infrastructure-as-code via Terraform.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring} \cvtag{AWS} \cvtag{Terraform} \cvtag{PostgreSQL} \cvtag{LogDNA}
+\cvtag{Java}\cvtag{Spring}\cvtag{AWS}\cvtag{Terraform}\cvtag{PostgreSQL}\cvtag{LogDNA}
 
 \divider
 
@@ -90,7 +100,7 @@
 \item Performance-focused schema and entity modeling; container-based test and production environments.
 \item Scalable REST API design with QA automation in the loop.
 \end{itemize}
-\cvtag{Kotlin} \cvtag{Java EE} \cvtag{Spring} \cvtag{MySQL} \cvtag{Feign} \cvtag{Firebase} \cvtag{GitLab CI} \cvtag{Graylog} \cvtag{Postman} \cvtag{Svelte}
+\cvtag{Kotlin}\cvtag{Java EE}\cvtag{Spring}\cvtag{MySQL}\cvtag{Feign}\cvtag{Firebase}\cvtag{GitLab CI}\cvtag{Graylog}\cvtag{Postman}\cvtag{Svelte}
 
 \divider
 
@@ -99,7 +109,7 @@
 \item Brought selling-operations software into LGPD compliance during the law's enforcement onset.
 \item Integrated biometric readers and thermal printers into the in-store stack; daily Oracle modeling.
 \end{itemize}
-\cvtag{Java EE} \cvtag{Oracle SQL} \cvtag{JSF/PrimeFaces} \cvtag{JBoss} \cvtag{WebLogic} \cvtag{DTAP} \cvtag{TDD}
+\cvtag{Java EE}\cvtag{Oracle SQL}\cvtag{JSF/PrimeFaces}\cvtag{JBoss}\cvtag{WebLogic}\cvtag{DTAP}\cvtag{TDD}
 
 \divider
 
@@ -108,7 +118,7 @@
 \item First production-grade exposure: Spring Boot services backing banking back-office.
 \item Introduced containerization and Travis CI pipelines to a team coming from manual deployment.
 \end{itemize}
-\cvtag{Java} \cvtag{Spring Boot} \cvtag{MSSQL} \cvtag{Maven} \cvtag{Ant} \cvtag{Bash} \cvtag{Travis CI} \cvtag{Linux}
+\cvtag{Java}\cvtag{Spring Boot}\cvtag{MSSQL}\cvtag{Maven}\cvtag{Ant}\cvtag{Bash}\cvtag{Travis CI}\cvtag{Linux}
 
 \clearpage
 \end{document}
