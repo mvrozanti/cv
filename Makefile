@@ -26,7 +26,7 @@ check: all
 	@fail=0; shopt -s nullglob; \
 	for t in tests/*.sh; do echo "==> test: $$t"; bash "$$t" || fail=1; done; \
 	exit $$fail
-preview: ptbr-human ; @bash render-preview.sh
+preview: ptbr-original ; @bash render-preview.sh
 clean:
 	@rm -rf $(BUILD)
 	@find en ptbr -type f \( -name '*.aux' -o -name '*.log' -o -name '*.out' -o -name '*.bbl' \

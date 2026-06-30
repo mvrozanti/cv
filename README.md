@@ -2,7 +2,7 @@
 
 Six tailored CVs in one repo: **2 languages (en, ptbr) × 3 framings (original, human, bot)**.
 
-![CV preview — ptbr/human](./preview.png)
+![CV preview — ptbr/original](./preview.png)
 
 |          | original (hand-authored) | human (altacv, impact) | bot (ATS plain-text) |
 |----------|--------------------------|------------------------|----------------------|

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# README image = ALL pages of ptbr/human (the PT-BR impact CV), laid side by
-# side and flattened onto white so the dark CV text stays visible on GitHub's
-# dark theme (a transparent background made it invisible there).
+# README image = ALL pages of ptbr/original (the primary CV), stacked and
+# flattened onto white so the dark CV text stays visible on GitHub's dark
+# theme (a transparent background made it invisible there).
 set -euo pipefail
-ROOT="$(cd "$(dirname "$0")" && pwd)"; BUILD="$ROOT/build"; ID=ptbr-human
+ROOT="$(cd "$(dirname "$0")" && pwd)"; BUILD="$ROOT/build"; ID=ptbr-original
 
 npages=$(dvisvgm --page=1- --no-fonts --stdout "$BUILD/$ID.xdv" 2>&1 >/dev/null | grep -c "graphic size")
 pages=()
