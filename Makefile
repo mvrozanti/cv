@@ -22,7 +22,10 @@ $(BUILD)/%.pdf: $$(wildcard $$(subst -,/,$$*)/*.tex) $(SHARED)/altacv.cls $(SHAR
 	     latexmk $(LATEXMK_FLAGS) -jobname=$* -output-directory=$(BUILD) main.tex; exit 1; }
 
 $(BUILD): ; @mkdir -p $(BUILD)
-check: all ; @bash check-orphans.sh
+check: all
+	@fail=0; shopt -s nullglob; \
+	for t in tests/*.sh; do echo "==> test: $$t"; bash "$$t" || fail=1; done; \
+	exit $$fail
 preview: ptbr-human ; @bash render-preview.sh
 clean:
 	@rm -rf $(BUILD)

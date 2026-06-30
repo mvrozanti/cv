@@ -2,7 +2,7 @@
 # Fail if any CV has >1 page AND its last page is under THRESHOLD_PT (an orphan).
 # Measured: orphan pages 9-123pt; healthy full pages 575-785pt. No ghostscript needed.
 set -uo pipefail
-ROOT="$(cd "$(dirname "$0")" && pwd)"; BUILD="$ROOT/build"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"; BUILD="$ROOT/build"
 IDS=(en-original en-human en-bot ptbr-original ptbr-human ptbr-bot)
 THRESHOLD_PT=200
 fail=0
