@@ -27,7 +27,7 @@ All CV variants must remain consistent with this file. If a variant needs a new 
 ### C6 Bank — Senior Engineer (04/2025 – 03/2026, São Paulo)
 - Designs, implements, maintains high-availability critical systems for credit granting
 - Information security focus
-- Stack: MongoDB, PostgreSQL, Splunk, Kotlin, Harness, Spring, Docker, Grafana, Koin/Javalin, DDD
+- Stack: MongoDB, PostgreSQL, Splunk, Kotlin, Harness, Spring, Docker, Grafana, Koin/Javalin, DDD, Event Sourcing
 
 ### Fiserv — Web Developer (03/2024 – 04/2025, São Paulo)
 - POS-related software dev, support, monitoring, maintenance
