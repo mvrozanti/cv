@@ -18,8 +18,8 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 \renewcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.85ex,inner ysep=0.6ex,text height=1.5ex,text depth=.25ex]{#1};%
-  \hspace{4pt plus 2pt minus 1pt}%
+  \tikz[baseline=(cvt.base)]\node[anchor=base west,draw=body!30,rounded corners,inner xsep=0.85ex,inner ysep=0.6ex,text height=1.5ex,text depth=.25ex](cvt){#1};%
+  \hspace{6pt plus 3pt minus 0pt}%
 }
 \renewcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1}%
@@ -44,7 +44,6 @@
 \begin{fullwidth}\makecvheader\end{fullwidth}
 
 \cvsection[sidebar]{Experience}
-\addnextpagesidebar{sidebar2}
 
 \cvevent{Senior Software Engineer}{\href{https://www.srmasset.com.br}{SRM Asset}}{03/2026 -- present}{São Paulo}
 \begin{itemize}
@@ -76,6 +75,7 @@
 
 \divider
 
+\begin{fullwidth}
 \cvevent{Backend Developer}{\href{https://www.upwork.com}{Upwork}}{Oct 2022 -- Jan 2024}{Remote (Freelance)}
 \begin{itemize}
 \item Solo contractor serving international clients: backend services and web data-extraction / automation pipelines across diverse sources.
@@ -120,5 +120,6 @@
 \end{itemize}
 \cvtag{Java}\cvtag{Spring Boot}\cvtag{MSSQL}\cvtag{Maven}\cvtag{Ant}\cvtag{Bash}\cvtag{Travis CI}\cvtag{Linux}
 
+\end{fullwidth}
 \clearpage
 \end{document}
