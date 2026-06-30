@@ -2,7 +2,7 @@
 
 One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audience + channel.
 
-## Two hard rules (do not violate)
+## Three hard rules (do not violate)
 
 1. **Never lose job-description information when editing.** When changing any CV, no
    responsibility, achievement, technology, domain, date, employer, or role may be
@@ -15,6 +15,8 @@ One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audienc
    (a) geometry/margins, (b) typography (`\AtBeginEnvironment{itemize}{\small}`, tighter
    `\divider`/itemsep, `\footnotesize` tag rows), (c) expand to honestly fill the extra
    page. **Never fix an orphan by cutting job info — rule 1 wins.**
+3. **Reverse-chronological always.** Every CV lists the most recent role first,
+   oldest last. Applies to all six.
 
 ## The matrix
 
@@ -28,6 +30,8 @@ One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audienc
   Recruiter human eye, direct/networked sends.
 - **bot** — ATS-safe: single self-contained `article`, no columns/graphics/icons,
   keyword-dense. Job boards, LinkedIn Easy Apply, unknown parsers.
+
+**Primary/featured CV: `ptbr/original`** — the README hero (`make preview`); polish focus.
 
 ## Structure
 
