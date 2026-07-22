@@ -38,7 +38,8 @@ One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audienc
     shared/   altacv.cls  refs.bib  facts.md  photo.png   # facts.md = source of truth
     en/   original/  human/  bot/    # each: main.tex (+ sidebar.tex for altacv)
     ptbr/ original/  human/  bot/
-    build/   # gitignored; PDFs never committed (only preview.png is)
+    build/   # gitignored scratch (latex artifacts + intermediate PDFs)
+    out/     # COMMITTED deliverables: 6 <id>.pdf + resume.png (via `make dist`)
 
 ## Source of truth
 
@@ -52,7 +53,8 @@ so all six stay consistent.
     make            # all six -> build/<id>.pdf
     make en-human   # one CV
     make check      # build all + assert no orphan pages (MUST pass)
-    make preview    # regenerate preview.png (ptbr/human page 1)
+    make preview    # regenerate preview.png (ptbr/original, all pages)
+    make dist       # build + copy 6 PDFs to out/ + render out/resume.png
     make clean
 
 Engine is xelatex for all six; `latexmk` auto-runs `biber` for the altacv CVs.
@@ -77,6 +79,8 @@ content change (PT-BR is where orphans appear first).
 
 ## Conventions
 
-Conventional Commits (`feat`/`fix`/`docs`/`refactor`/`build`, scope `cv`). Do not track
-build artifacts: `build/` and `*.pdf` are gitignored; the only committed generated asset
-is `preview.png` (via `make preview`).
+Conventional Commits (`feat`/`fix`/`docs`/`refactor`/`build`, scope `cv`). `build/` and
+`*.pdf` are gitignored *except* `out/*.pdf`. Committed generated assets: `preview.png`
+(README hero, `make preview`) and everything under `out/` — the 6 PDFs + `resume.png`
+consumed by `cv.mvr.ac` and the `mvr.ac` landing hero (`make dist`). Refresh `out/` with
+`make dist` after any content change so the committed PDFs never drift from source.
