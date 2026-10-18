@@ -1,6 +1,6 @@
 # CV — Marcelo Vironda Rozanti
 
-One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audience + channel.
+One LaTeX repo, **4 canonical CVs = 2 languages × 2 framings**. Pick by audience + channel.
 
 ## Three hard rules (do not violate)
 
@@ -16,48 +16,47 @@ One LaTeX repo, **6 canonical CVs = 2 languages × 3 framings**. Pick by audienc
    `\divider`/itemsep, `\footnotesize` tag rows), (c) expand to honestly fill the extra
    page. **Never fix an orphan by cutting job info — rule 1 wins.**
 3. **Reverse-chronological always.** Every CV lists the most recent role first,
-   oldest last. Applies to all six.
+   oldest last. Applies to all four.
 
 ## The matrix
 
-|          | original (hand-authored) | human (altacv, impact) | bot (ATS plain-text) |
-|----------|--------------------------|------------------------|----------------------|
-| **en**   | `en/original`            | `en/human`             | `en/bot`             |
-| **ptbr** | `ptbr/original`          | `ptbr/human`           | `ptbr/bot`           |
+|          | default (hand-authored altacv) | bot (ATS plain-text) |
+|----------|--------------------------------|----------------------|
+| **en**   | `en/default`                   | `en/bot`             |
+| **ptbr** | `ptbr/default`                 | `ptbr/bot`           |
 
-- **original** — the hand-authored altacv CV. Leave wording; structural moves only.
-- **human** — altacv "pretty", outcome/impact bullets (`main.tex` + `sidebar.tex`).
-  Recruiter human eye, direct/networked sends.
+- **default** — the hand-authored altacv CV (`main.tex` + `sidebar.tex`). Leave
+  wording; structural moves only. Recruiter eye, direct/networked sends.
 - **bot** — ATS-safe: single self-contained `article`, no columns/graphics/icons,
   keyword-dense. Job boards, LinkedIn Easy Apply, unknown parsers.
 
-**Primary/featured CV: `ptbr/original`** — the README hero (`make preview`); polish focus.
+**Primary/featured CV: `ptbr/default`** — the README hero (`make preview`); polish focus.
 
 ## Structure
 
     shared/   altacv.cls  refs.bib  facts.md  photo.png   # facts.md = source of truth
-    en/   original/  human/  bot/    # each: main.tex (+ sidebar.tex for altacv)
-    ptbr/ original/  human/  bot/
+    en/   default/  bot/    # each: main.tex (+ sidebar.tex for altacv)
+    ptbr/ default/  bot/
     build/   # gitignored scratch (latex artifacts + intermediate PDFs)
-    out/     # COMMITTED deliverables: 6 <id>.pdf + resume.png (via `make dist`)
+    out/     # COMMITTED deliverables: 4 <id>.pdf + resume.png (via `make dist`)
 
 ## Source of truth
 
 `shared/facts.md` is canonical for every claim. **Never invent metrics** — no fabricated
 p99 / throughput / cost numbers. Stronger verbs and domain framing ("regulated",
 "high-availability") are fine. A new fact goes into `facts.md` first, then into the CVs,
-so all six stay consistent.
+so all four stay consistent.
 
 ## Build & check
 
-    make            # all six -> build/<id>.pdf
-    make en-human   # one CV
+    make            # all four -> build/<id>.pdf
+    make en-default # one CV
     make check      # build all + assert no orphan pages (MUST pass)
-    make preview    # regenerate preview.png (ptbr/original, all pages)
-    make dist       # build + copy 6 PDFs to out/ + render out/resume.png
+    make preview    # regenerate preview.png (ptbr/default, all pages)
+    make dist       # build + copy 4 PDFs to out/ + render out/resume.png
     make clean
 
-Engine is xelatex for all six; `latexmk` auto-runs `biber` for the altacv CVs.
+Engine is xelatex for all four; `latexmk` auto-runs `biber` for the altacv CVs.
 Page measurement uses `dvisvgm` on the `.xdv` (ghostscript is not installed; `gs` is
 shell-aliased to `git status`). Render path for images: dvisvgm `.xdv` → svg → inkscape.
 
@@ -70,8 +69,7 @@ content change (PT-BR is where orphans appear first).
 ## Tailoring for a specific job
 
 1. Read the posting: level (IC/staff/mgr), company stage, industry, ATS likelihood.
-2. Pick framing: ATS/job-board → `bot`; recruiter human eye → `human`; conservative/as-is
-   → `original`.
+2. Pick framing: ATS/job-board → `bot`; recruiter human eye → `default`.
 3. Open that `main.tex`; propose small surgical edits to tagline, top bullets, skill
    ordering. Do not invent metrics. Do not silently rewrite — show a diff. **Never drop a
    role's responsibilities or tech (rule 1).**
@@ -81,6 +79,6 @@ content change (PT-BR is where orphans appear first).
 
 Conventional Commits (`feat`/`fix`/`docs`/`refactor`/`build`, scope `cv`). `build/` and
 `*.pdf` are gitignored *except* `out/*.pdf`. Committed generated assets: `preview.png`
-(README hero, `make preview`) and everything under `out/` — the 6 PDFs + `resume.png`
+(README hero, `make preview`) and everything under `out/` — the 4 PDFs + `resume.png`
 consumed by `cv.mvr.ac` and the `mvr.ac` landing hero (`make dist`). Refresh `out/` with
 `make dist` after any content change so the committed PDFs never drift from source.

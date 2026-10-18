@@ -3,7 +3,7 @@
 # Measured: orphan pages 9-123pt; healthy full pages 575-785pt. No ghostscript needed.
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; BUILD="$ROOT/build"
-IDS=(en-original en-human en-bot ptbr-original ptbr-human ptbr-bot)
+IDS=(en-default en-bot ptbr-default ptbr-bot)
 THRESHOLD_PT=200
 fail=0
 printf '%-16s %-6s %-10s %s\n' CV pages last-pt verdict

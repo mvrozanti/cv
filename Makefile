@@ -4,7 +4,7 @@ SHARED := $(ROOT)/shared
 BUILD  := $(ROOT)/build
 OUT    := $(ROOT)/out
 
-IDS  := en-original en-human en-bot ptbr-original ptbr-human ptbr-bot
+IDS  := en-default en-bot ptbr-default ptbr-bot
 PDFS := $(addprefix $(BUILD)/,$(addsuffix .pdf,$(IDS)))
 LATEXMK_FLAGS := -xelatex -interaction=nonstopmode -halt-on-error -file-line-error
 
@@ -27,13 +27,13 @@ check: all
 	@fail=0; shopt -s nullglob; \
 	for t in tests/*.sh; do echo "==> test: $$t"; bash "$$t" || fail=1; done; \
 	exit $$fail
-preview: ptbr-original ; @bash render-preview.sh
+preview: ptbr-default ; @bash render-preview.sh
 dist: all preview
 	@mkdir -p $(OUT)
 	@cp $(PDFS) $(OUT)/
-	@dvisvgm --page=1 --no-fonts --stdout "$(BUILD)/ptbr-original.xdv" > "$(BUILD)/resume.svg" 2>/dev/null
+	@dvisvgm --page=1 --no-fonts --stdout "$(BUILD)/ptbr-default.xdv" > "$(BUILD)/resume.svg" 2>/dev/null
 	@inkscape "$(BUILD)/resume.svg" -w 600 -b '#ffffff' -y 1.0 -o "$(OUT)/resume.png" 2>/dev/null
-	@echo "==> dist -> $(OUT) (6 committed PDFs + resume.png for cv.mvr.ac / mvr.ac hero)"
+	@echo "==> dist -> $(OUT) (4 committed PDFs + resume.png for cv.mvr.ac / mvr.ac hero)"
 clean:
 	@rm -rf $(BUILD)
 	@find en ptbr -type f \( -name '*.aux' -o -name '*.log' -o -name '*.out' -o -name '*.bbl' \
